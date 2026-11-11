@@ -1,0 +1,59 @@
+{
+  "rows": 7339,
+  "employees": 528,
+  "base_rows": 7189,
+  "injected": 140,
+  "injected_by_type": {
+    "LONG_ABSENCE": 50,
+    "IMPOSSIBLE_HOURS": 45,
+    "PATTERN_CHANGE": 45
+  },
+  "repeatable": true,
+  "average_precision": 0.5006540190979409,
+  "chosen": {
+    "flag_rate": 0.035,
+    "threshold": 0.5655528046164648,
+    "flagged": 252,
+    "caught": 119,
+    "missed": 21,
+    "false_alarms": 133,
+    "catch_rate": 0.85,
+    "false_alarm_rate": 0.018867924528301886,
+    "precision": 0.4722222222222222,
+    "f1": 0.6071428571428571
+  },
+  "reviews_per_month": 14.2921129503408,
+  "catch_by_type": {
+    "IMPOSSIBLE_HOURS": 0.533,
+    "LONG_ABSENCE": 1.0,
+    "PATTERN_CHANGE": 1.0,
+    "normal": 0.019
+  },
+  "hours_rule": {
+    "caught": 45,
+    "of": 45,
+    "false_alarms": 0
+  },
+  "reload_identical": true,
+  "external": {
+    "flagged": 238,
+    "caught": 104,
+    "of_provided": 150,
+    "catch_rate": 0.6933,
+    "false_alarms": 134,
+    "precision": 0.437,
+    "flagged_share": 0.0324
+  },
+  "external_by_type": {
+    "ABSENCE_STREAK": 1.0,
+    "IMPOSSIBLE_HOURS": 0.457,
+    "LATE_SPIKE": 0.1,
+    "SUDDEN_DROP": 1.0,
+    "ZERO_ATTENDANCE": 1.0
+  },
+  "reference": {
+    "precision": 0.403,
+    "recall": 0.593,
+    "flagged": 221
+  }
+}

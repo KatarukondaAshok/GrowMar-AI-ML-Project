@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+phase-1/data/raw/
+phase-1/data/*.xlsx
+
+.env
+.pytest_cache/
+.ipynb_checkpoints/
+*.log

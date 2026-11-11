@@ -1,0 +1,27 @@
+id,area,issue,decision
+D1,Duplicates,6 exact duplicate rows,Drop (keep first)
+D2,Outliers,Pay is right-skewed; IQR/z flag senior staff,Keep rows; model log(pay) / comp_ratio
+D3,Outliers,"Skewed counts (late, overtime, leave)",Cap at 99th percentile (train only)
+D4,Outliers,"EMP-0313: 1.8 hrs, 20% attendance","Keep, flag for HR check"
+D5,Outliers,Long tenures up to 164 months,Genuine; keep
+D6,Errors,3 salaries 10x too high,"Divide by 10, confirm with Python team"
+D7,Errors,4 negative tenures,"Set to 0, flag source check"
+D8,Errors,2 attendance rates = 1.12,Clip to 1.0
+D9,Errors,13 inconsistent work_location spellings,Standardise
+D10,Errors,wfh_share outside 0-1,"Clip to [0,1]"
+D11,Errors,10 negative total experience,Clip at 0
+D20,Errors,90 rows: tenure > total experience by 6+ months,Raise experience to tenure
+D12,Imbalance,14.6% left,"Use precision/recall/F1/ROC-AUC, not accuracy"
+D13,Imbalance,5.8:1 ratio,Stratified CV + class weights
+D14,Imbalance,Dept D06 21% vs D10 6%,Keep department; check per-dept results
+D15,Leakage,5 exit columns + voluntary label,Drop
+D16,Leakage,IDs and source,Exclude from model inputs
+D17,Leakage,Preprocessing fitted on all data,Fit on train only
+D18,Leakage,Dates span 2021-2025,Also test a time-based split
+D19,Fairness,Gender and age in separate sheet,Do not use without review
+M1,Missing,months_since_last_promotion 61% (never promoted),Sentinel + never_promoted flag
+M2,Missing,last_raise_pct 8.5% (no raise),Fill 0 + flag
+M3,Missing,last_performance_rating 7.6% (new joiners),Flag + median
+M4,Missing,last_engagement_score 22%,Flag + median
+M5,Missing,commute_distance_km 2.3%,Median by location
+M6,Missing,highest_education 0.6%,'Unknown' category

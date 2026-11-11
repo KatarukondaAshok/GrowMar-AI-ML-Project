@@ -1,0 +1,7 @@
+# Only needed to REBUILD the notebooks and PDF reports from the scripts/ folder (not needed to run the notebooks)
+-r requirements.txt
+nbformat>=5.9
+nbconvert>=7.0
+reportlab>=4.0
+pypdf>=4.0
+pillow>=10.0

@@ -1,0 +1,75 @@
+,coefficient
+department_id_D10,-1.5940373879232255
+highest_education_M.A. Social Work,-1.4914121380352452
+work_location_Erode,-0.8335762285402377
+job_level,-0.8216851048467778
+work_mode_Remote,-0.7559352653064647
+work_location_Delhi NCR,-0.6159458995414719
+highest_education_B.Sc,-0.6119822824363715
+last_engagement_score,-0.5254430215897626
+employment_type_Permanent,-0.4972869417564176
+highest_education_M.Sc Statistics,-0.46652365187340905
+comp_ratio,-0.4454318790315683
+department_id_D05,-0.43130322136507004
+not_reviewed_yet,-0.39255483433010235
+department_id_D07,-0.3093409612823118
+highest_education_MBA,-0.30727366914672377
+tenure_years,-0.2882641544963653
+tenure_months,-0.28826415449636444
+highest_education_Diploma Engineering,-0.28019529012272193
+department_id_D02,-0.27554351349495454
+work_mode_Hybrid,-0.2463164987841269
+dept_attrition_rate_prior_12m,-0.19363603587026287
+highest_education_B.E. Mechanical,-0.16838379395965225
+last_performance_rating,-0.16703826302325003
+raises_received,-0.11541531870669891
+internal_transfers,-0.10364127062246349
+work_location_Chennai,-0.0919294509465181
+work_location_Hyderabad,-0.07899026577372015
+promotions_received,-0.07227946097483429
+pay_vs_dept_median,-0.07162449750104956
+late_arrivals_3m,-0.039448697752098895
+highest_education_B.A.,-0.03194130561939416
+avg_overtime_hours_per_month_3m,-0.017070541170296938
+attendance_gap,-0.01568021698514205
+training_hours_12m,-0.0047317165130315786
+never_promoted,0.001562205032357516
+department_id_D08,0.011954957978139877
+attendance_rate_3m,0.015680216985136327
+work_location_Bengaluru,0.016394713517958105
+months_since_last_promotion,0.04795743757834304
+previous_employers_count,0.05198859288907272
+paid_leave_days_6m,0.058756830687760386
+department_id_D01,0.06857387331175871
+avg_hours_worked_3m,0.0706425190024996
+unpaid_leave_days_6m,0.10963968329842147
+highest_education_BBA,0.11388377315433802
+last_raise_pct,0.1255882389144108
+highest_education_B.E. Computer Science,0.13497690687848707
+department_id_D03,0.1575530141246971
+highest_education_M.Tech,0.16686079377403357
+work_location_Pune,0.17993032845980406
+overtime_per_year_of_tenure,0.19046400966188262
+highest_education_MCA,0.19841564810025222
+highest_education_B.Sc Computer Science,0.214080782778038
+engagement_missing,0.22213344616992298
+wfh_share_3m,0.23543334083493558
+commute_distance_km,0.24503314612731497
+highest_education_B.Des,0.3101117556354268
+employment_type_Fixed-Term Contract,0.32779297067505575
+manager_changes_12m,0.3280079888101004
+department_id_D04,0.34650464155486255
+highest_education_B.E. Electronics,0.34721475958918124
+work_location_Coimbatore,0.365748747013787
+work_location_Kochi,0.37747640385201214
+highest_education_B.Com,0.42635208593345747
+work_location_Mumbai,0.5113976808770249
+log_pay,0.5442102626575392
+months_since_last_raise,0.5514763661818252
+highest_education_B.Tech Information Technology,0.6237269023170493
+total_experience_years,0.6302583476437732
+highest_education_infrequent_sklearn,0.6525947519518898
+no_raise_yet,0.7221216590239317
+work_mode_Onsite,0.8327577930092253
+department_id_D06,0.8991312846715964
+department_id_D09,0.9570133413431413

@@ -1,0 +1,7 @@
+column,filled_for_leavers_pct,filled_for_stayers_pct,verdict
+exit_date,100.0,0.0,LEAKS (only known after exit)
+resignation_date,92.0,0.0,LEAKS (only known after exit)
+exit_reason,100.0,0.0,LEAKS (only known after exit)
+exit_interview_done,100.0,0.0,LEAKS (only known after exit)
+fnf_settlement_amount,100.0,0.0,LEAKS (only known after exit)
+voluntary_left_within_12m,,,"LEAKS (subset of the label, consistent in 100% of rows)"

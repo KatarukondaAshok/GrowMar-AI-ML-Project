@@ -1,0 +1,8 @@
+rule,rows_failing
+tenure_months < 0,4
+total_experience_years < 0,10
+attendance_rate_3m > 1,2
+wfh_share_3m < 0,190
+wfh_share_3m > 1,23
+tenure longer than total experience,90
+avg_hours_worked_3m < 4,1
