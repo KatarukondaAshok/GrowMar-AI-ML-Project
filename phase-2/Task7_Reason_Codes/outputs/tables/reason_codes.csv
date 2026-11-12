@@ -1,0 +1,11 @@
+reason_code,sentence_template
+DUPLICATE_PAYMENT,Second payslip paid to the same employee for the same month
+ZERO_PAY,Active employee shows zero pay
+NEGATIVE_NET_PAY,Deductions exceed gross pay
+GROSS_ABOVE_NORM,Gross is {x:.1f}x what the fixed pay and days worked allow
+GROSS_BELOW_EXPECTED,Gross is {x:.0f}% below what the fixed pay and days worked allow
+OVERTIME_ABOVE_CAP,{x:g} paid overtime hours exceeds the 50-hour cap
+PF_NOT_DEDUCTED,Provident fund missing although it was deducted in other months
+ROLE_PAY_ABOVE_PEERS,Fixed pay is {x:.1f}x the usual pay for this role
+NET_PAY_MISMATCH,Net pay does not equal gross pay minus deductions
+STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips

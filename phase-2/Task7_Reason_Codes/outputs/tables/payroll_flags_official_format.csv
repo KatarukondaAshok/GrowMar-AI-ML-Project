@@ -1,0 +1,224 @@
+result_id,source_dataset,record_id,employee_id,period,anomaly_score,flagged,reason_code,reason_text,money_at_risk,model_version,scored_at
+AN-0001,payroll_monthly_features,PI-003304,EMP-0304,2025-12-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,2102520.13,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0002,payroll_monthly_features,PI-002595,EMP-0453,2025-10-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,1826789.58,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0003,payroll_monthly_features,PI-002124,EMP-0331,2025-09-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,1413294.48,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0004,payroll_monthly_features,PI-003441,EMP-0533,2025-12-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,1329377.01,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0005,payroll_monthly_features,PI-007199,EMP-0590,2026-09-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,1060574.3,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0006,payroll_monthly_features,PI-006419,EMP-0669,2026-07-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,1011003.48,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0007,payroll_monthly_features,PI-006595,EMP-0283,2026-08-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,869200.35,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0008,payroll_monthly_features,PI-003796,EMP-0459,2026-01-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,852962.91,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0009,payroll_monthly_features,PI-006837,EMP-0666,2026-08-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,762597.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0010,payroll_monthly_features,PI-005869,EMP-0503,2026-06-01,1.0,Y,NEGATIVE_NET_PAY,Deductions exceed gross pay,620036.69,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0011,payroll_monthly_features,PI-004312,EMP-0613,2026-02-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,561102.36,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0012,payroll_monthly_features,PI-001855,EMP-0526,2025-08-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,453613.84,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0013,payroll_monthly_features,PI-005846,EMP-0458,2026-06-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,442827.99,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0014,payroll_monthly_features,PI-001058,EMP-0507,2025-06-01,1.0,Y,ROLE_PAY_ABOVE_PEERS,Fixed pay is 3.3x the usual pay for this role,408527.77,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0015,payroll_monthly_features,PI-006297,EMP-0515,2026-07-01,1.0,Y,ROLE_PAY_ABOVE_PEERS,Fixed pay is 3.4x the usual pay for this role,323874.04,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0016,payroll_monthly_features,PI-D00002,EMP-0112,2025-10-01,1.0,Y,DUPLICATE_PAYMENT,Second payslip paid to the same employee for the same month,272123.47,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0017,payroll_monthly_features,PI-005484,EMP-0543,2026-05-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,270138.5,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0018,payroll_monthly_features,PI-005821,EMP-0416,2026-06-01,1.0,Y,ROLE_PAY_ABOVE_PEERS,Fixed pay is 3.1x the usual pay for this role,246946.39,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0019,payroll_monthly_features,PI-005583,EMP-0660,2026-05-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,226380.45,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0020,payroll_monthly_features,PI-005057,EMP-0516,2026-04-01,1.0,Y,ROLE_PAY_ABOVE_PEERS,Fixed pay is 3.1x the usual pay for this role,226032.8,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0021,payroll_monthly_features,PI-000493,EMP-0209,2025-05-01,1.0,Y,NEGATIVE_NET_PAY,Deductions exceed gross pay,212683.63,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0022,payroll_monthly_features,PI-003474,EMP-0574,2025-12-01,1.0,Y,ROLE_PAY_ABOVE_PEERS,Fixed pay is 2.9x the usual pay for this role,211366.4,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0023,payroll_monthly_features,PI-004686,EMP-0574,2026-03-01,1.0,Y,ROLE_PAY_ABOVE_PEERS,Fixed pay is 2.9x the usual pay for this role,211366.4,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0024,payroll_monthly_features,PI-005048,EMP-0503,2026-04-01,1.0,Y,ZERO_PAY,Active employee shows zero pay,211143.35,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0025,payroll_monthly_features,PI-002761,EMP-0011,2025-11-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,209090.96,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0026,payroll_monthly_features,PI-000388,EMP-0004,2025-05-01,1.0,Y,ROLE_PAY_ABOVE_PEERS,Fixed pay is 2.5x the usual pay for this role,190254.06,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0027,payroll_monthly_features,PI-004865,EMP-0142,2026-04-01,1.0,Y,ZERO_PAY,Active employee shows zero pay,158336.57,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0028,payroll_monthly_features,PI-D00008,EMP-0218,2025-05-01,1.0,Y,DUPLICATE_PAYMENT,Second payslip paid to the same employee for the same month,157942.92,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0029,payroll_monthly_features,PI-005500,EMP-0569,2026-05-01,1.0,Y,ROLE_PAY_ABOVE_PEERS,Fixed pay is 3.3x the usual pay for this role,157824.64,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0030,payroll_monthly_features,PI-007174,EMP-0554,2026-09-01,1.0,Y,ROLE_PAY_ABOVE_PEERS,Fixed pay is 2.9x the usual pay for this role,155826.71,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0031,payroll_monthly_features,PI-004191,EMP-0441,2026-02-01,1.0,Y,ROLE_PAY_ABOVE_PEERS,Fixed pay is 3.1x the usual pay for this role,146901.3,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0032,payroll_monthly_features,PI-005511,EMP-0580,2026-05-01,1.0,Y,ROLE_PAY_ABOVE_PEERS,Fixed pay is 3.1x the usual pay for this role,144659.51,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0033,payroll_monthly_features,PI-D00010,EMP-0408,2025-05-01,1.0,Y,DUPLICATE_PAYMENT,Second payslip paid to the same employee for the same month,136809.04,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0034,payroll_monthly_features,PI-004581,EMP-0409,2026-03-01,1.0,Y,ROLE_PAY_ABOVE_PEERS,Fixed pay is 3.0x the usual pay for this role,133370.18,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0035,payroll_monthly_features,PI-D00009,EMP-0590,2026-05-01,1.0,Y,DUPLICATE_PAYMENT,Second payslip paid to the same employee for the same month,117934.5,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0036,payroll_monthly_features,PI-006331,EMP-0571,2026-07-01,1.0,Y,ROLE_PAY_ABOVE_PEERS,Fixed pay is 2.7x the usual pay for this role,117128.49,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0037,payroll_monthly_features,PI-005443,EMP-0469,2026-05-01,1.0,Y,NEGATIVE_NET_PAY,Deductions exceed gross pay,111951.49,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0038,payroll_monthly_features,PI-D00012,EMP-0411,2025-07-01,1.0,Y,DUPLICATE_PAYMENT,Second payslip paid to the same employee for the same month,104259.17,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0039,payroll_monthly_features,PI-D00005,EMP-0579,2026-04-01,1.0,Y,DUPLICATE_PAYMENT,Second payslip paid to the same employee for the same month,104164.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0040,payroll_monthly_features,PI-002360,EMP-0013,2025-10-01,1.0,Y,ROLE_PAY_ABOVE_PEERS,Fixed pay is 2.4x the usual pay for this role,94648.78,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0041,payroll_monthly_features,PI-D00001,EMP-0179,2026-02-01,1.0,Y,DUPLICATE_PAYMENT,Second payslip paid to the same employee for the same month,86641.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0042,payroll_monthly_features,PI-005873,EMP-0509,2026-06-01,0.869,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,84505.81,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0043,payroll_monthly_features,PI-007146,EMP-0509,2026-09-01,0.884,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,80153.23,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0044,payroll_monthly_features,PI-005670,EMP-0103,2026-06-01,0.845,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,77602.45,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0045,payroll_monthly_features,PI-D00014,EMP-0585,2025-06-01,1.0,Y,DUPLICATE_PAYMENT,Second payslip paid to the same employee for the same month,77018.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0046,payroll_monthly_features,PI-006067,EMP-0057,2026-07-01,1.0,Y,NEGATIVE_NET_PAY,Deductions exceed gross pay,76638.7,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0047,payroll_monthly_features,PI-005937,EMP-0600,2026-06-01,0.813,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,76154.26,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0048,payroll_monthly_features,PI-007300,EMP-0705,2026-09-01,0.813,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,73108.86,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0049,payroll_monthly_features,PI-004758,EMP-0652,2026-03-01,0.776,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,72915.37,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0050,payroll_monthly_features,PI-D00015,EMP-0092,2026-06-01,1.0,Y,DUPLICATE_PAYMENT,Second payslip paid to the same employee for the same month,71903.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0051,payroll_monthly_features,PI-001090,EMP-0542,2025-06-01,0.739,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,69460.73,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0052,payroll_monthly_features,PI-000904,EMP-0266,2025-06-01,0.809,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,65579.46,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0053,payroll_monthly_features,PI-002240,EMP-0513,2025-09-01,0.807,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,65573.03,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0054,payroll_monthly_features,PI-004643,EMP-0513,2026-03-01,0.808,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,64187.22,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0055,payroll_monthly_features,PI-001064,EMP-0513,2025-06-01,0.807,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,63600.23,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0056,payroll_monthly_features,PI-002086,EMP-0266,2025-09-01,0.815,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,63495.31,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0057,payroll_monthly_features,PI-003389,EMP-0445,2025-12-01,0.683,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,63016.89,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0058,payroll_monthly_features,PI-003094,EMP-0588,2025-11-01,1.0,Y,NEGATIVE_NET_PAY,Deductions exceed gross pay,61401.96,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0059,payroll_monthly_features,PI-D00013,EMP-0250,2025-05-01,1.0,Y,DUPLICATE_PAYMENT,Second payslip paid to the same employee for the same month,61282.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0060,payroll_monthly_features,PI-003284,EMP-0266,2025-12-01,0.795,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,60604.56,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0061,payroll_monthly_features,PI-006909,EMP-0031,2026-09-01,1.0,Y,ROLE_PAY_ABOVE_PEERS,Fixed pay is 2.6x the usual pay for this role,60209.88,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0062,payroll_monthly_features,PI-003429,EMP-0513,2025-12-01,0.808,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,60105.84,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0063,payroll_monthly_features,PI-004682,EMP-0570,2026-03-01,0.744,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,58336.81,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0064,payroll_monthly_features,PI-005984,EMP-0652,2026-06-01,0.684,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,58068.84,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0065,payroll_monthly_features,PI-006004,EMP-0673,2026-06-01,0.633,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,57429.51,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0066,payroll_monthly_features,PI-005052,EMP-0509,2026-04-01,0.797,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,55962.24,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0067,payroll_monthly_features,PI-001115,EMP-0570,2025-06-01,0.739,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,55308.11,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0068,payroll_monthly_features,PI-D00004,EMP-0386,2026-03-01,1.0,Y,DUPLICATE_PAYMENT,Second payslip paid to the same employee for the same month,55064.51,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0069,payroll_monthly_features,PI-000998,EMP-0423,2025-06-01,0.713,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,54372.21,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0070,payroll_monthly_features,PI-005825,EMP-0423,2026-06-01,0.723,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,54153.44,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0071,payroll_monthly_features,PI-004734,EMP-0627,2026-03-01,1.0,Y,ZERO_PAY,Active employee shows zero pay,54121.91,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0072,payroll_monthly_features,PI-005839,EMP-0445,2026-06-01,0.739,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,54042.19,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0073,payroll_monthly_features,PI-002286,EMP-0570,2025-09-01,0.722,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,52927.16,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0074,payroll_monthly_features,PI-005760,EMP-0304,2026-06-01,0.658,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,52698.47,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0075,payroll_monthly_features,PI-007098,EMP-0423,2026-09-01,0.714,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,52164.59,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0076,payroll_monthly_features,PI-D00007,EMP-0012,2026-02-01,1.0,Y,DUPLICATE_PAYMENT,Second payslip paid to the same employee for the same month,51915.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0077,payroll_monthly_features,PI-004714,EMP-0605,2026-03-01,0.629,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,51757.72,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0078,payroll_monthly_features,PI-003373,EMP-0423,2025-12-01,0.689,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,51508.34,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0079,payroll_monthly_features,PI-005022,EMP-0453,2026-04-01,0.754,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,49974.69,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0080,payroll_monthly_features,PI-005640,EMP-0047,2026-06-01,1.0,Y,ZERO_PAY,Active employee shows zero pay,49662.99,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0081,payroll_monthly_features,PI-004590,EMP-0423,2026-03-01,0.684,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,49503.42,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0082,payroll_monthly_features,PI-000135,EMP-0266,2025-04-01,0.762,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,48741.52,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0083,payroll_monthly_features,PI-005085,EMP-0560,2026-04-01,0.9,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,47329.97,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0084,payroll_monthly_features,PI-004606,EMP-0445,2026-03-01,0.614,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,47248.06,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0085,payroll_monthly_features,PI-002299,EMP-0583,2025-09-01,0.651,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,47180.07,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0086,payroll_monthly_features,PI-004885,EMP-0190,2026-04-01,0.853,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,46797.38,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0087,payroll_monthly_features,PI-006858,EMP-0690,2026-08-01,1.0,Y,NEGATIVE_NET_PAY,Deductions exceed gross pay,45328.8,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0088,payroll_monthly_features,PI-004429,EMP-0098,2026-03-01,0.711,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,44908.74,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0089,payroll_monthly_features,PI-007118,EMP-0457,2026-09-01,0.602,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,44849.72,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0090,payroll_monthly_features,PI-005940,EMP-0605,2026-06-01,0.612,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,44310.66,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0091,payroll_monthly_features,PI-002008,EMP-0098,2025-09-01,0.711,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,44126.01,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0092,payroll_monthly_features,PI-000823,EMP-0098,2025-06-01,0.719,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,43550.93,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0093,payroll_monthly_features,PI-007210,EMP-0605,2026-09-01,0.599,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,43183.81,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0094,payroll_monthly_features,PI-001024,EMP-0457,2025-06-01,0.571,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,43004.85,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0095,payroll_monthly_features,PI-004504,EMP-0266,2026-03-01,0.741,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,42753.04,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0096,payroll_monthly_features,PI-D00011,EMP-0622,2026-02-01,1.0,Y,DUPLICATE_PAYMENT,Second payslip paid to the same employee for the same month,41222.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0097,payroll_monthly_features,PI-004695,EMP-0583,2026-03-01,0.616,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,41175.34,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0098,payroll_monthly_features,PI-003470,EMP-0570,2025-12-01,0.711,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,40330.66,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0099,payroll_monthly_features,PI-004870,EMP-0149,2026-04-01,0.688,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,40064.24,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0100,payroll_monthly_features,PI-003207,EMP-0098,2025-12-01,0.717,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,39257.37,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0101,payroll_monthly_features,PI-004820,EMP-0055,2026-04-01,0.689,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,38896.09,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0102,payroll_monthly_features,PI-004923,EMP-0276,2026-04-01,0.662,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,38747.65,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0103,payroll_monthly_features,PI-D00006,EMP-0430,2026-02-01,1.0,Y,DUPLICATE_PAYMENT,Second payslip paid to the same employee for the same month,38306.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0104,payroll_monthly_features,PI-000169,EMP-0324,2025-04-01,0.607,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,38219.65,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0105,payroll_monthly_features,PI-004811,EMP-0038,2026-04-01,0.602,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,38005.3,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0106,payroll_monthly_features,PI-004887,EMP-0198,2026-04-01,0.884,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,37849.76,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0107,payroll_monthly_features,PI-001866,EMP-0540,2025-08-01,1.0,Y,ZERO_PAY,Active employee shows zero pay,37745.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0108,payroll_monthly_features,PI-004950,EMP-0325,2026-04-01,0.701,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,37371.09,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0109,payroll_monthly_features,PI-004954,EMP-0331,2026-04-01,0.7,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,36805.75,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0110,payroll_monthly_features,PI-002324,EMP-0610,2025-09-01,0.579,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,36582.56,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0111,payroll_monthly_features,PI-D00003,EMP-0691,2026-07-01,1.0,Y,DUPLICATE_PAYMENT,Second payslip paid to the same employee for the same month,36370.36,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0112,payroll_monthly_features,PI-006906,EMP-0026,2026-09-01,0.596,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,34930.95,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0113,payroll_monthly_features,PI-007112,EMP-0445,2026-09-01,0.601,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,34169.69,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0114,payroll_monthly_features,PI-005629,EMP-0026,2026-06-01,0.59,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,33963.12,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0115,payroll_monthly_features,PI-004908,EMP-0246,2026-04-01,0.638,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,32640.93,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0116,payroll_monthly_features,PI-007215,EMP-0610,2026-09-01,0.653,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,32424.2,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0117,payroll_monthly_features,PI-005808,EMP-0398,2026-06-01,0.613,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,31441.65,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0118,payroll_monthly_features,PI-000741,EMP-0578,2025-05-01,1.0,Y,NEGATIVE_NET_PAY,Deductions exceed gross pay,30813.37,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0119,payroll_monthly_features,PI-005103,EMP-0581,2026-04-01,0.648,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,30561.22,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0120,payroll_monthly_features,PI-004984,EMP-0395,2026-04-01,0.632,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,28380.94,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0121,payroll_monthly_features,PI-000025,EMP-0049,2025-04-01,0.615,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,28294.74,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0122,payroll_monthly_features,PI-000100,EMP-0198,2025-04-01,0.75,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,28227.73,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0123,payroll_monthly_features,PI-005035,EMP-0479,2026-04-01,0.69,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,27746.76,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0124,payroll_monthly_features,PI-004960,EMP-0344,2026-04-01,0.583,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,27617.28,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0125,payroll_monthly_features,PI-000696,EMP-0530,2025-05-01,1.0,Y,GROSS_BELOW_EXPECTED,Gross is 12% below what the fixed pay and days worked allow,26135.8,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0126,payroll_monthly_features,PI-004925,EMP-0279,2026-04-01,0.651,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,26123.65,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0127,payroll_monthly_features,PI-005945,EMP-0610,2026-06-01,0.599,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,25950.89,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0128,payroll_monthly_features,PI-004850,EMP-0112,2026-04-01,0.609,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,25932.26,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0129,payroll_monthly_features,PI-004992,EMP-0405,2026-04-01,0.614,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,25830.95,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0130,payroll_monthly_features,PI-004847,EMP-0107,2026-04-01,0.666,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,25628.19,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0131,payroll_monthly_features,PI-005556,EMP-0633,2026-05-01,1.0,Y,NEGATIVE_NET_PAY,Deductions exceed gross pay,25594.89,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0132,payroll_monthly_features,PI-004818,EMP-0049,2026-04-01,0.667,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,25329.22,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0133,payroll_monthly_features,PI-002209,EMP-0464,2025-09-01,1.0,Y,OVERTIME_ABOVE_CAP,99 paid overtime hours exceeds the 50-hour cap,25281.82,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0134,payroll_monthly_features,PI-001298,EMP-0275,2025-07-01,1.0,Y,GROSS_BELOW_EXPECTED,Gross is 12% below what the fixed pay and days worked allow,25232.22,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0135,payroll_monthly_features,PI-003529,EMP-0635,2025-12-01,1.0,Y,OVERTIME_ABOVE_CAP,102 paid overtime hours exceeds the 50-hour cap,24813.12,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0136,payroll_monthly_features,PI-004910,EMP-0249,2026-04-01,0.617,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,24715.61,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0137,payroll_monthly_features,PI-000281,EMP-0485,2025-04-01,1.0,Y,OVERTIME_ABOVE_CAP,96 paid overtime hours exceeds the 50-hour cap,22293.91,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0138,payroll_monthly_features,PI-000087,EMP-0161,2025-04-01,0.574,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,19629.67,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0139,payroll_monthly_features,PI-000053,EMP-0099,2025-04-01,0.61,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,19518.86,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0140,payroll_monthly_features,PI-000154,EMP-0302,2025-04-01,1.0,Y,OVERTIME_ABOVE_CAP,81 paid overtime hours exceeds the 50-hour cap,19251.49,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0141,payroll_monthly_features,PI-004111,EMP-0304,2026-02-01,1.0,Y,GROSS_BELOW_EXPECTED,Gross is 12% below what the fixed pay and days worked allow,18865.5,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0142,payroll_monthly_features,PI-000585,EMP-0375,2025-05-01,1.0,Y,GROSS_BELOW_EXPECTED,Gross is 12% below what the fixed pay and days worked allow,15248.64,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0143,payroll_monthly_features,PI-005205,EMP-0691,2026-04-01,1.0,Y,OVERTIME_ABOVE_CAP,78 paid overtime hours exceeds the 50-hour cap,13296.93,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0144,payroll_monthly_features,PI-002956,EMP-0398,2025-11-01,1.0,Y,GROSS_BELOW_EXPECTED,Gross is 12% below what the fixed pay and days worked allow,13154.56,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0145,payroll_monthly_features,PI-004844,EMP-0099,2026-04-01,0.615,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,11829.25,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0146,payroll_monthly_features,PI-000840,EMP-0134,2025-06-01,1.0,Y,GROSS_BELOW_EXPECTED,Gross is 12% below what the fixed pay and days worked allow,10304.36,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0147,payroll_monthly_features,PI-002777,EMP-0041,2025-11-01,1.0,Y,OVERTIME_ABOVE_CAP,78 paid overtime hours exceeds the 50-hour cap,9198.76,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0148,payroll_monthly_features,PI-006680,EMP-0441,2026-08-01,1.0,Y,GROSS_BELOW_EXPECTED,Gross is 12% below what the fixed pay and days worked allow,8984.83,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0149,payroll_monthly_features,PI-000560,EMP-0332,2025-05-01,0.601,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,8863.24,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0150,payroll_monthly_features,PI-002125,EMP-0332,2025-09-01,0.718,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,8821.5,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0151,payroll_monthly_features,PI-001333,EMP-0332,2025-07-01,0.685,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,8812.76,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0152,payroll_monthly_features,PI-001727,EMP-0332,2025-08-01,0.668,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,8315.57,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0153,payroll_monthly_features,PI-000943,EMP-0332,2025-06-01,0.682,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,8198.21,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0154,payroll_monthly_features,PI-003723,EMP-0332,2026-01-01,0.673,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,8119.97,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0155,payroll_monthly_features,PI-002521,EMP-0332,2025-10-01,0.679,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,7835.77,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0156,payroll_monthly_features,PI-005994,EMP-0662,2026-06-01,1.0,Y,GROSS_BELOW_EXPECTED,Gross is 12% below what the fixed pay and days worked allow,7663.8,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0157,payroll_monthly_features,PI-002923,EMP-0332,2025-11-01,0.731,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,7572.31,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0158,payroll_monthly_features,PI-003431,EMP-0516,2025-12-01,1.0,Y,GROSS_BELOW_EXPECTED,Gross is 12% below what the fixed pay and days worked allow,7547.16,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0159,payroll_monthly_features,PI-003322,EMP-0332,2025-12-01,0.741,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,7376.71,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0160,payroll_monthly_features,PI-001481,EMP-0546,2025-07-01,1.0,Y,GROSS_BELOW_EXPECTED,Gross is 12% below what the fixed pay and days worked allow,7190.76,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0161,payroll_monthly_features,PI-005711,EMP-0198,2026-06-01,0.741,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,5335.26,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0162,payroll_monthly_features,PI-006131,EMP-0198,2026-07-01,0.741,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,5335.26,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0163,payroll_monthly_features,PI-006986,EMP-0198,2026-09-01,0.741,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,5335.26,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0164,payroll_monthly_features,PI-005299,EMP-0198,2026-05-01,0.749,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,5227.67,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0165,payroll_monthly_features,PI-006557,EMP-0198,2026-08-01,0.749,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,5227.67,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0166,payroll_monthly_features,PI-005151,EMP-0635,2026-04-01,1.0,Y,GROSS_BELOW_EXPECTED,Gross is 12% below what the fixed pay and days worked allow,4902.81,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0167,payroll_monthly_features,PI-006867,EMP-0699,2026-08-01,1.0,Y,GROSS_BELOW_EXPECTED,Gross is 12% below what the fixed pay and days worked allow,3822.69,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0168,payroll_monthly_features,PI-006886,EMP-0718,2026-08-01,1.0,Y,OVERTIME_ABOVE_CAP,57 paid overtime hours exceeds the 50-hour cap,3293.66,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0169,payroll_monthly_features,PI-002135,EMP-0349,2025-09-01,1.0,Y,OVERTIME_ABOVE_CAP,57 paid overtime hours exceeds the 50-hour cap,2418.94,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0170,payroll_monthly_features,PI-004881,EMP-0184,2026-04-01,0.65,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,1998.07,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0171,payroll_monthly_features,PI-002046,EMP-0179,2025-09-01,1.0,Y,PF_NOT_DEDUCTED,Provident fund missing although it was deducted in other months,1800.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0172,payroll_monthly_features,PI-004053,EMP-0183,2026-02-01,1.0,Y,PF_NOT_DEDUCTED,Provident fund missing although it was deducted in other months,1800.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0173,payroll_monthly_features,PI-004085,EMP-0254,2026-02-01,1.0,Y,PF_NOT_DEDUCTED,Provident fund missing although it was deducted in other months,1800.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0174,payroll_monthly_features,PI-005334,EMP-0275,2026-05-01,1.0,Y,PF_NOT_DEDUCTED,Provident fund missing although it was deducted in other months,1800.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0175,payroll_monthly_features,PI-001714,EMP-0309,2025-08-01,1.0,Y,PF_NOT_DEDUCTED,Provident fund missing although it was deducted in other months,1800.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0176,payroll_monthly_features,PI-004972,EMP-0371,2026-04-01,1.0,Y,PF_NOT_DEDUCTED,Provident fund missing although it was deducted in other months,1800.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0177,payroll_monthly_features,PI-004983,EMP-0390,2026-04-01,1.0,Y,PF_NOT_DEDUCTED,Provident fund missing although it was deducted in other months,1800.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0178,payroll_monthly_features,PI-000982,EMP-0403,2025-06-01,1.0,Y,PF_NOT_DEDUCTED,Provident fund missing although it was deducted in other months,1800.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0179,payroll_monthly_features,PI-000223,EMP-0412,2025-04-01,1.0,Y,PF_NOT_DEDUCTED,Provident fund missing although it was deducted in other months,1800.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0180,payroll_monthly_features,PI-004691,EMP-0579,2026-03-01,1.0,Y,PF_NOT_DEDUCTED,Provident fund missing although it was deducted in other months,1800.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0181,payroll_monthly_features,PI-006362,EMP-0608,2026-07-01,1.0,Y,PF_NOT_DEDUCTED,Provident fund missing although it was deducted in other months,1800.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0182,payroll_monthly_features,PI-003112,EMP-0609,2025-11-01,1.0,Y,PF_NOT_DEDUCTED,Provident fund missing although it was deducted in other months,1800.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0183,payroll_monthly_features,PI-003118,EMP-0617,2025-11-01,1.0,Y,PF_NOT_DEDUCTED,Provident fund missing although it was deducted in other months,1800.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0184,payroll_monthly_features,PI-004301,EMP-0599,2026-02-01,1.0,Y,PF_NOT_DEDUCTED,Provident fund missing although it was deducted in other months,1391.04,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0185,payroll_monthly_features,PI-002757,EMP-0650,2025-10-01,0.592,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,1232.97,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0186,payroll_monthly_features,PI-001957,EMP-0638,2025-08-01,0.613,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,1157.67,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0187,payroll_monthly_features,PI-005073,EMP-0543,2026-04-01,0.578,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,1105.98,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0188,payroll_monthly_features,PI-002721,EMP-0614,2025-10-01,0.649,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,952.84,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0189,payroll_monthly_features,PI-000701,EMP-0535,2025-05-01,0.728,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,717.4,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0190,payroll_monthly_features,PI-005225,EMP-0041,2026-05-01,0.8,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,650.96,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0191,payroll_monthly_features,PI-006466,EMP-0719,2026-07-01,0.575,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,641.31,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0192,payroll_monthly_features,PI-006815,EMP-0642,2026-08-01,0.755,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,610.16,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0193,payroll_monthly_features,PI-003183,EMP-0054,2025-12-01,0.585,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,610.06,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0194,payroll_monthly_features,PI-006161,EMP-0265,2026-07-01,0.819,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,594.1,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0195,payroll_monthly_features,PI-005587,EMP-0664,2026-05-01,0.709,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,524.76,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0196,payroll_monthly_features,PI-003965,EMP-0673,2026-01-01,0.692,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,475.54,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0197,payroll_monthly_features,PI-003365,EMP-0411,2025-12-01,0.59,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,438.23,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0198,payroll_monthly_features,PI-004379,EMP-0682,2026-02-01,0.693,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,364.7,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0199,payroll_monthly_features,PI-005224,EMP-0040,2026-05-01,0.599,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,293.75,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0200,payroll_monthly_features,PI-003964,EMP-0672,2026-01-01,0.58,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,245.8,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0201,payroll_monthly_features,PI-004863,EMP-0138,2026-04-01,0.726,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,183.36,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0202,payroll_monthly_features,PI-007129,EMP-0479,2026-09-01,0.685,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,149.63,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0203,payroll_monthly_features,PI-001956,EMP-0637,2025-08-01,0.584,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,133.62,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0204,payroll_monthly_features,PI-006888,EMP-0720,2026-08-01,1.0,Y,PF_NOT_DEDUCTED,Provident fund missing although it was deducted in other months,132.86,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0205,payroll_monthly_features,PI-002353,EMP-0640,2025-09-01,0.733,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,121.91,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0206,payroll_monthly_features,PI-001868,EMP-0542,2025-08-01,0.663,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,101.91,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0207,payroll_monthly_features,PI-001557,EMP-0627,2025-07-01,0.609,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,74.68,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0208,payroll_monthly_features,PI-003963,EMP-0671,2026-01-01,0.7,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,67.24,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0209,payroll_monthly_features,PI-002354,EMP-0641,2025-09-01,0.63,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,59.18,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0210,payroll_monthly_features,PI-004793,EMP-0687,2026-03-01,0.623,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,45.55,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0211,payroll_monthly_features,PI-006107,EMP-0138,2026-07-01,0.62,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,28.35,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0212,payroll_monthly_features,PI-005275,EMP-0138,2026-05-01,0.597,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,26.44,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0213,payroll_monthly_features,PI-006040,EMP-0710,2026-06-01,0.635,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,25.57,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0214,payroll_monthly_features,PI-005687,EMP-0138,2026-06-01,0.594,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,25.48,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0215,payroll_monthly_features,PI-003036,EMP-0518,2025-11-01,0.736,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,21.68,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0216,payroll_monthly_features,PI-005206,EMP-0692,2026-04-01,0.625,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,18.73,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0217,payroll_monthly_features,PI-000444,EMP-0110,2025-05-01,0.655,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,6.47,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0218,payroll_monthly_features,PI-006405,EMP-0655,2026-07-01,0.638,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,4.65,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0219,payroll_monthly_features,PI-006039,EMP-0709,2026-06-01,0.63,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,2.03,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0220,payroll_monthly_features,PI-001955,EMP-0636,2025-08-01,0.68,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,1.8,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0221,payroll_monthly_features,PI-001558,EMP-0628,2025-07-01,0.644,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,0.56,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0222,payroll_monthly_features,PI-006465,EMP-0718,2026-07-01,0.659,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,0.01,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0223,payroll_monthly_features,PI-000879,EMP-0216,2025-06-01,0.604,Y,STATISTICAL_OUTLIER,Unusual combination of pay ratios versus all other payslips,0.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00

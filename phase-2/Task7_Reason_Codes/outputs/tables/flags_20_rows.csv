@@ -1,0 +1,21 @@
+result_id,source_dataset,record_id,employee_id,period,anomaly_score,flagged,reason_code,reason_text,money_at_risk,model_version,scored_at
+AN-0001,payroll_monthly_features,PI-003304,EMP-0304,2025-12-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,2102520.13,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0002,payroll_monthly_features,PI-002595,EMP-0453,2025-10-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,1826789.58,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0003,payroll_monthly_features,PI-002124,EMP-0331,2025-09-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,1413294.48,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0004,payroll_monthly_features,PI-003441,EMP-0533,2025-12-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,1329377.01,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0005,payroll_monthly_features,PI-007199,EMP-0590,2026-09-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,1060574.3,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0006,payroll_monthly_features,PI-006419,EMP-0669,2026-07-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,1011003.48,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0007,payroll_monthly_features,PI-006595,EMP-0283,2026-08-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,869200.35,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0008,payroll_monthly_features,PI-003796,EMP-0459,2026-01-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,852962.91,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0009,payroll_monthly_features,PI-006837,EMP-0666,2026-08-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,762597.0,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0010,payroll_monthly_features,PI-005869,EMP-0503,2026-06-01,1.0,Y,NEGATIVE_NET_PAY,Deductions exceed gross pay,620036.69,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0011,payroll_monthly_features,PI-004312,EMP-0613,2026-02-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,561102.36,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0012,payroll_monthly_features,PI-001855,EMP-0526,2025-08-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,453613.84,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0013,payroll_monthly_features,PI-005846,EMP-0458,2026-06-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,442827.99,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0014,payroll_monthly_features,PI-001058,EMP-0507,2025-06-01,1.0,Y,ROLE_PAY_ABOVE_PEERS,Fixed pay is 3.3x the usual pay for this role,408527.77,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0015,payroll_monthly_features,PI-006297,EMP-0515,2026-07-01,1.0,Y,ROLE_PAY_ABOVE_PEERS,Fixed pay is 3.4x the usual pay for this role,323874.04,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0016,payroll_monthly_features,PI-D00002,EMP-0112,2025-10-01,1.0,Y,DUPLICATE_PAYMENT,Second payslip paid to the same employee for the same month,272123.47,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0017,payroll_monthly_features,PI-005484,EMP-0543,2026-05-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,270138.5,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0018,payroll_monthly_features,PI-005821,EMP-0416,2026-06-01,1.0,Y,ROLE_PAY_ABOVE_PEERS,Fixed pay is 3.1x the usual pay for this role,246946.39,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0019,payroll_monthly_features,PI-005583,EMP-0660,2026-05-01,1.0,Y,GROSS_ABOVE_NORM,Gross is 10.0x what the fixed pay and days worked allow,226380.45,payroll-anomaly-1.0.0,2026-10-01 02:00:00
+AN-0020,payroll_monthly_features,PI-005057,EMP-0516,2026-04-01,1.0,Y,ROLE_PAY_ABOVE_PEERS,Fixed pay is 3.1x the usual pay for this role,226032.8,payroll-anomaly-1.0.0,2026-10-01 02:00:00

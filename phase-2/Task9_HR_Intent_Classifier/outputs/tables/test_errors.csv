@@ -1,0 +1,25 @@
+text,expected_intent,predicted,confidence
+yo,greet,chitchat,0.09
+appreciate it,thanks,who_to_contact,0.17
+cheers,thanks,pf_info,0.06
+what are the rules on taking leave,hr_policy_leave,working_hours,0.62
+do we have fixed hours,working_hours,headcount_forecast,0.17
+which days is the office closed,holiday_list,wfh_policy,0.23
+do we get Holi off,holiday_list,insurance_benefits,0.49
+when do we get paid,payslip_date,insurance_benefits,0.33
+how to get my travel money back,reimbursement_policy,payslip_status,0.1
+who do I ask for benefits help,who_to_contact,help,0.57
+how many days notice do I need to serve,notice_period_policy,wfh_policy,0.76
+when do I become permanent,probation_policy,payslip_date,0.15
+my team name,my_department,team_members,0.89
+who works under me,team_members,wfh_policy,0.27
+which days were flagged for me,unusual_attendance,payroll_flags,0.37
+list people likely to leave in Operations,attrition_risk_query,headcount_forecast,0.2
+how many employees next quarter,headcount_forecast,hr_policy_leave,0.28
+evaluate this cv for Accountant,resume_score_request,salary_band_query,0.61
+will it rain tomorrow,out_of_scope,probation_policy,0.12
+who is leading the ipl,out_of_scope,my_manager,0.26
+what should I call you,chitchat,salary_band_query,0.32
+what can this bot do,help,chitchat,0.51
+list your features,help,holiday_list,0.26
+show commands,help,salary_of_other,0.15

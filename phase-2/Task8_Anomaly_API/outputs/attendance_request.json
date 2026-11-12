@@ -1,0 +1,20 @@
+{
+ "records": [
+  {
+   "attendance_feature_id": "AF-03170",
+   "employee_id": "EMP-0356",
+   "month": "2025-07-01",
+   "scheduled_days": 23,
+   "present_days": 0,
+   "wfh_days": 0,
+   "half_days_unpaid": 0,
+   "paid_leave_days": 2,
+   "unpaid_absence_days": 21,
+   "longest_unpaid_streak_days": 21,
+   "late_arrivals": 0,
+   "avg_hours_worked": 0.0,
+   "overtime_hours": 0.0,
+   "attendance_rate": 0.0
+  }
+ ]
+}

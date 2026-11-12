@@ -1,0 +1,95 @@
+{
+  "task6": {
+    "comparison": [
+      {
+        "detector": "Reference baseline (Isolation Forest, 2.5%)",
+        "flagged": 184,
+        "caught": 40,
+        "precision": 0.217,
+        "recall": 0.4,
+        "missed": NaN,
+        "false_alarms": NaN,
+        "f1": NaN
+      },
+      {
+        "detector": "Model alone (my ratios, Isolation Forest, 2.5%)",
+        "flagged": 184,
+        "caught": 59,
+        "precision": 0.321,
+        "recall": 0.59,
+        "missed": 41.0,
+        "false_alarms": 125.0,
+        "f1": 0.415
+      },
+      {
+        "detector": "Rules alone",
+        "flagged": 93,
+        "caught": 93,
+        "precision": 1.0,
+        "recall": 0.93,
+        "missed": 7.0,
+        "false_alarms": 0.0,
+        "f1": 0.964
+      },
+      {
+        "detector": "Rules + model (final)",
+        "flagged": 223,
+        "caught": 98,
+        "precision": 0.439,
+        "recall": 0.98,
+        "missed": 2.0,
+        "false_alarms": 125.0,
+        "f1": 0.607
+      }
+    ],
+    "extra": {
+      "model_only_flags": 130,
+      "model_only_true": 5,
+      "rule_flags": 93,
+      "rule_false_alarms": 0
+    },
+    "flags_total": 223
+  },
+  "task7": {
+    "rows": 223,
+    "columns_match_sample": true,
+    "ranked_desc": true,
+    "money_total_rule_flags_rs": 19622650.669999998
+  },
+  "task9": {
+    "test_messages": 132,
+    "accuracy_always_answer": 0.818,
+    "threshold": 0.5,
+    "answered_share": 0.659,
+    "accuracy_when_answered": 0.931,
+    "fallback_share": 0.341,
+    "top_confused": [
+      {
+        "expected_intent": "attrition_risk_query",
+        "predicted": "headcount_forecast",
+        "count": 1
+      },
+      {
+        "expected_intent": "chitchat",
+        "predicted": "salary_band_query",
+        "count": 1
+      },
+      {
+        "expected_intent": "greet",
+        "predicted": "chitchat",
+        "count": 1
+      },
+      {
+        "expected_intent": "headcount_forecast",
+        "predicted": "hr_policy_leave",
+        "count": 1
+      },
+      {
+        "expected_intent": "help",
+        "predicted": "chitchat",
+        "count": 1
+      }
+    ],
+    "grouped_cv_accuracy": 0.942
+  }
+}

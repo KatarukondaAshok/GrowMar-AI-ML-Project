@@ -1,0 +1,7 @@
+# Tests, evidence tables/figures and the PDF report (not needed just to run the API)
+-r requirements.txt
+pytest>=8.0
+matplotlib>=3.8
+reportlab>=4.0
+pypdf>=4.0
+pillow>=10.0

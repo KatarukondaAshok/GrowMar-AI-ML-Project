@@ -1,0 +1,6 @@
+employee_id,full_name,manager_id,department_id,department_name
+EMP-0002,Asha Rao,EMP-0011,D01,Engineering
+EMP-0003,Ravi Nair,EMP-0011,D01,Engineering
+EMP-0011,Meena Iyer,,D03,People & Culture
+EMP-0004,Priya Nair,EMP-0011,D06,Customer Support
+EMP-0005,Priya Nair,EMP-0011,D01,Engineering

@@ -1,0 +1,5 @@
+detector,flagged,caught,precision,recall,missed,false_alarms,f1
+"Reference baseline (Isolation Forest, 2.5%)",184,40,0.217,0.4,,,
+"Model alone (my ratios, Isolation Forest, 2.5%)",184,59,0.321,0.59,41.0,125.0,0.415
+Rules alone,93,93,1.0,0.93,7.0,0.0,0.964
+Rules + model (final),223,98,0.439,0.98,2.0,125.0,0.607

@@ -1,0 +1,563 @@
+{
+  "responses": {
+    "greet": {
+      "response_template": "Hello! I am the Zenith Nova HR assistant. Ask me about leave, payslips, attendance or policies.",
+      "requires_login": "N",
+      "allowed_roles": "ALL",
+      "backend_or_service_call": NaN,
+      "on_failure": NaN,
+      "policy_note": NaN
+    },
+    "goodbye": {
+      "response_template": "Goodbye! Message me anytime.",
+      "requires_login": "N",
+      "allowed_roles": "ALL",
+      "backend_or_service_call": NaN,
+      "on_failure": NaN,
+      "policy_note": NaN
+    },
+    "thanks": {
+      "response_template": "You are welcome!",
+      "requires_login": "N",
+      "allowed_roles": "ALL",
+      "backend_or_service_call": NaN,
+      "on_failure": NaN,
+      "policy_note": NaN
+    },
+    "hr_policy_leave": {
+      "response_template": "You get 12 casual leave and 12 sick leave days each financial year, plus earned leave at 1.25 days per month (carry forward up to 30 days).",
+      "requires_login": "N",
+      "allowed_roles": "ALL",
+      "backend_or_service_call": "faq:hr_policy_leave",
+      "on_failure": NaN,
+      "policy_note": NaN
+    },
+    "working_hours": {
+      "response_template": "Office hours are 9:00 to 18:00, Monday to Friday, with core hours from 11:00 to 16:00.",
+      "requires_login": "N",
+      "allowed_roles": "ALL",
+      "backend_or_service_call": "faq:working_hours",
+      "on_failure": NaN,
+      "policy_note": NaN
+    },
+    "holiday_list": {
+      "response_template": "The holiday calendar is published each year. The next holiday is {next_holiday}.",
+      "requires_login": "N",
+      "allowed_roles": "ALL",
+      "backend_or_service_call": "GET /api/v1/holidays",
+      "on_failure": NaN,
+      "policy_note": NaN
+    },
+    "payslip_date": {
+      "response_template": "Salary is credited on the first working day of the next month.",
+      "requires_login": "N",
+      "allowed_roles": "ALL",
+      "backend_or_service_call": "faq:payslip_date",
+      "on_failure": NaN,
+      "policy_note": NaN
+    },
+    "apply_leave_howto": {
+      "response_template": "Open the Leave screen, choose the leave type and dates, then submit. Your manager gets an approval request.",
+      "requires_login": "N",
+      "allowed_roles": "ALL",
+      "backend_or_service_call": "faq:apply_leave",
+      "on_failure": NaN,
+      "policy_note": NaN
+    },
+    "reimbursement_policy": {
+      "response_template": "Submit bills within 30 days in the Expenses screen. Your head of department approves, Finance pays in the next cycle.",
+      "requires_login": "N",
+      "allowed_roles": "ALL",
+      "backend_or_service_call": "faq:reimbursement",
+      "on_failure": NaN,
+      "policy_note": NaN
+    },
+    "who_to_contact": {
+      "response_template": "Payroll queries: payroll@znova-demo.example. Benefits and policies: hr@znova-demo.example. IT: it-help@znova-demo.example.",
+      "requires_login": "N",
+      "allowed_roles": "ALL",
+      "backend_or_service_call": "faq:contacts",
+      "on_failure": NaN,
+      "policy_note": NaN
+    },
+    "wfh_policy": {
+      "response_template": "Most roles follow a hybrid pattern with about three office days a week. Remote roles are listed in your offer letter.",
+      "requires_login": "N",
+      "allowed_roles": "ALL",
+      "backend_or_service_call": "faq:wfh",
+      "on_failure": NaN,
+      "policy_note": NaN
+    },
+    "notice_period_policy": {
+      "response_template": "Notice is 30 days (L1-L2), 60 days (L3) or 90 days (L4 and above). Buy-out needs HR and manager approval.",
+      "requires_login": "N",
+      "allowed_roles": "ALL",
+      "backend_or_service_call": "faq:notice",
+      "on_failure": NaN,
+      "policy_note": NaN
+    },
+    "probation_policy": {
+      "response_template": "Probation is six months. Confirmation is reviewed by your manager and HR.",
+      "requires_login": "N",
+      "allowed_roles": "ALL",
+      "backend_or_service_call": "faq:probation",
+      "on_failure": NaN,
+      "policy_note": NaN
+    },
+    "insurance_benefits": {
+      "response_template": "Group health insurance covers you, spouse and up to two children. Add dependents within 30 days of joining or a life event.",
+      "requires_login": "N",
+      "allowed_roles": "ALL",
+      "backend_or_service_call": "faq:insurance",
+      "on_failure": NaN,
+      "policy_note": NaN
+    },
+    "pf_info": {
+      "response_template": "PF is 12% of basic salary (ceiling 15,000 basic) from both you and the company.",
+      "requires_login": "N",
+      "allowed_roles": "ALL",
+      "backend_or_service_call": "faq:pf",
+      "on_failure": NaN,
+      "policy_note": NaN
+    },
+    "tax_declaration": {
+      "response_template": "Upload investment proofs in the Tax screen before the cut-off. TDS is calculated on projected annual income.",
+      "requires_login": "N",
+      "allowed_roles": "ALL",
+      "backend_or_service_call": "faq:tax",
+      "on_failure": NaN,
+      "policy_note": NaN
+    },
+    "leave_balance": {
+      "response_template": "You have {cl} CL, {sl} SL and {el} EL days left.",
+      "requires_login": "Y",
+      "allowed_roles": "EMPLOYEE,HR,ADMIN",
+      "backend_or_service_call": "GET /api/v1/leave/balance?employee=me",
+      "on_failure": "Sorry, I could not fetch that right now. Please try again or contact HR.",
+      "policy_note": "Employees may only see their own data; HR/Admin rules apply for aggregate AI views"
+    },
+    "leave_request_status": {
+      "response_template": "Your latest leave request ({dates}) is {status}.",
+      "requires_login": "Y",
+      "allowed_roles": "EMPLOYEE,HR,ADMIN",
+      "backend_or_service_call": "GET /api/v1/leave/requests?employee=me&limit=1",
+      "on_failure": "Sorry, I could not fetch that right now. Please try again or contact HR.",
+      "policy_note": "Employees may only see their own data; HR/Admin rules apply for aggregate AI views"
+    },
+    "payslip_status": {
+      "response_template": "Your payslip for {month} is {status}. You can download it from the Payslips screen.",
+      "requires_login": "Y",
+      "allowed_roles": "EMPLOYEE,HR,ADMIN",
+      "backend_or_service_call": "GET /api/v1/payslips/me/{month}",
+      "on_failure": "Sorry, I could not fetch that right now. Please try again or contact HR.",
+      "policy_note": "Employees may only see their own data; HR/Admin rules apply for aggregate AI views"
+    },
+    "my_manager": {
+      "response_template": "Your manager is {manager_name}.",
+      "requires_login": "Y",
+      "allowed_roles": "EMPLOYEE,HR,ADMIN",
+      "backend_or_service_call": "GET /api/v1/employees/me",
+      "on_failure": "Sorry, I could not fetch that right now. Please try again or contact HR.",
+      "policy_note": "Employees may only see their own data; HR/Admin rules apply for aggregate AI views"
+    },
+    "my_department": {
+      "response_template": "You work in {department_name}.",
+      "requires_login": "Y",
+      "allowed_roles": "EMPLOYEE,HR,ADMIN",
+      "backend_or_service_call": "GET /api/v1/employees/me",
+      "on_failure": "Sorry, I could not fetch that right now. Please try again or contact HR.",
+      "policy_note": "Employees may only see their own data; HR/Admin rules apply for aggregate AI views"
+    },
+    "team_members": {
+      "response_template": "Your direct reports: {team_list}.",
+      "requires_login": "Y",
+      "allowed_roles": "EMPLOYEE,HR,ADMIN",
+      "backend_or_service_call": "GET /api/v1/employees/me/team",
+      "on_failure": "Sorry, I could not fetch that right now. Please try again or contact HR.",
+      "policy_note": "Employees may only see their own data; HR/Admin rules apply for aggregate AI views"
+    },
+    "attendance_summary": {
+      "response_template": "In {month} you were present {present} of {scheduled} days with {late} late arrivals.",
+      "requires_login": "Y",
+      "allowed_roles": "EMPLOYEE,HR,ADMIN",
+      "backend_or_service_call": "GET /api/v1/attendance/summary?employee=me&month={month}",
+      "on_failure": "Sorry, I could not fetch that right now. Please try again or contact HR.",
+      "policy_note": "Employees may only see their own data; HR/Admin rules apply for aggregate AI views"
+    },
+    "unusual_attendance": {
+      "response_template": "{count} day(s) look unusual this month: {days}. Flags are leads to check, not conclusions.",
+      "requires_login": "Y",
+      "allowed_roles": "EMPLOYEE,HR,ADMIN",
+      "backend_or_service_call": "POST /ai/v1/anomaly/attendance (own records only)",
+      "on_failure": "Sorry, I could not fetch that right now. Please try again or contact HR.",
+      "policy_note": "Employees may only see their own data; HR/Admin rules apply for aggregate AI views"
+    },
+    "salary_band_query": {
+      "response_template": "Suggested band for {role}: {low} to {high} (median {median}). This is guidance, not a decision.",
+      "requires_login": "Y",
+      "allowed_roles": "HR,ADMIN",
+      "backend_or_service_call": "POST /ai/v1/salary-band",
+      "on_failure": "Sorry, I could not fetch that right now. Please try again or contact HR.",
+      "policy_note": "Employees may only see their own data; HR/Admin rules apply for aggregate AI views"
+    },
+    "attrition_risk_query": {
+      "response_template": "{n} employees in {dept} are in the high-risk band. Top drivers: {drivers}. Predictions support HR; they do not decide.",
+      "requires_login": "Y",
+      "allowed_roles": "HR,ADMIN",
+      "backend_or_service_call": "GET /ai/v1/attrition/risk?department={dept}",
+      "on_failure": "Sorry, I could not fetch that right now. Please try again or contact HR.",
+      "policy_note": "Employees may only see their own data; HR/Admin rules apply for aggregate AI views"
+    },
+    "headcount_forecast": {
+      "response_template": "Forecast headcount for {month}: {value} (80% range {low} to {high}).",
+      "requires_login": "Y",
+      "allowed_roles": "HR,ADMIN",
+      "backend_or_service_call": "GET /ai/v1/forecast/headcount",
+      "on_failure": "Sorry, I could not fetch that right now. Please try again or contact HR.",
+      "policy_note": "Employees may only see their own data; HR/Admin rules apply for aggregate AI views"
+    },
+    "payroll_flags": {
+      "response_template": "{count} payslips were flagged for {month}. Top reason: {reason}.",
+      "requires_login": "Y",
+      "allowed_roles": "HR,ADMIN",
+      "backend_or_service_call": "GET /ai/v1/anomaly/payroll?month={month}",
+      "on_failure": "Sorry, I could not fetch that right now. Please try again or contact HR.",
+      "policy_note": "Employees may only see their own data; HR/Admin rules apply for aggregate AI views"
+    },
+    "resume_score_request": {
+      "response_template": "Match score {score}/100 for {role}. Matched skills: {matched}. Missing: {missing}.",
+      "requires_login": "Y",
+      "allowed_roles": "HR,ADMIN",
+      "backend_or_service_call": "POST /ai/v1/resume/score",
+      "on_failure": "Sorry, I could not fetch that right now. Please try again or contact HR.",
+      "policy_note": "Employees may only see their own data; HR/Admin rules apply for aggregate AI views"
+    },
+    "salary_of_other": {
+      "response_template": "Sorry, I cannot share another person's pay. You can ask about your own payslip.",
+      "requires_login": "Y",
+      "allowed_roles": "ALL",
+      "backend_or_service_call": "REFUSE",
+      "on_failure": "Sorry, I could not fetch that right now. Please try again or contact HR.",
+      "policy_note": "Employees may only see their own data; HR/Admin rules apply for aggregate AI views"
+    },
+    "out_of_scope": {
+      "response_template": "I can help with HR topics such as leave, payslips, attendance and policies.",
+      "requires_login": "N",
+      "allowed_roles": "ALL",
+      "backend_or_service_call": NaN,
+      "on_failure": NaN,
+      "policy_note": NaN
+    },
+    "chitchat": {
+      "response_template": "I am an AI assistant for Zenith Nova HR. I can answer policy questions and look up your own HR data.",
+      "requires_login": "N",
+      "allowed_roles": "ALL",
+      "backend_or_service_call": NaN,
+      "on_failure": NaN,
+      "policy_note": NaN
+    },
+    "help": {
+      "response_template": "Try: \"leave balance\", \"payslip for March\", \"who is my manager\", \"work from home policy\".",
+      "requires_login": "N",
+      "allowed_roles": "ALL",
+      "backend_or_service_call": NaN,
+      "on_failure": NaN,
+      "policy_note": NaN
+    }
+  },
+  "faq": [
+    {
+      "faq_id": "FAQ-01",
+      "question": "How many casual leaves do I get?",
+      "answer": "12 days per financial year, prorated for joiners.",
+      "category": "Leave",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-02",
+      "question": "How many sick leaves do I get?",
+      "answer": "12 days per financial year. A medical certificate is needed beyond 2 days.",
+      "category": "Leave",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-03",
+      "question": "How does earned leave work?",
+      "answer": "It accrues at 1.25 days per month and up to 30 days can be carried forward.",
+      "category": "Leave",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-04",
+      "question": "Is leave without pay allowed?",
+      "answer": "Yes, when other balances are exhausted. It is deducted on a calendar-day basis.",
+      "category": "Leave",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-05",
+      "question": "What is the maternity leave policy?",
+      "answer": "26 weeks of paid maternity leave as per statute.",
+      "category": "Leave",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-06",
+      "question": "What are the office hours?",
+      "answer": "9:00 to 18:00, Monday to Friday. Core hours are 11:00 to 16:00.",
+      "category": "Working time",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-07",
+      "question": "Do we have to work on Saturdays?",
+      "answer": "No. Saturday and Sunday are weekly offs.",
+      "category": "Working time",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-08",
+      "question": "How does overtime pay work?",
+      "answer": "Eligible roles (L1-L2 in Support, HR, Finance, Operations) get 2x hourly pay, capped at 50 hours a month.",
+      "category": "Pay",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-09",
+      "question": "When is salary paid?",
+      "answer": "On the first working day of the following month.",
+      "category": "Pay",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-10",
+      "question": "How is LOP calculated?",
+      "answer": "Monthly fixed pay divided by calendar days, multiplied by days without pay.",
+      "category": "Pay",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-11",
+      "question": "When is the performance bonus paid?",
+      "answer": "With the April payroll, based on the latest appraisal rating, for employees with 12 months of service.",
+      "category": "Pay",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-12",
+      "question": "How often are salaries revised?",
+      "answer": "Annually from 1 April, based on the appraisal rating. Promotions can happen at the same time.",
+      "category": "Pay",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-13",
+      "question": "How is PF calculated?",
+      "answer": "12% of basic, with a wage ceiling of 15,000 basic per month, from employee and employer.",
+      "category": "Statutory",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-14",
+      "question": "Who is covered by ESI?",
+      "answer": "Employees whose monthly fixed gross is 21,000 or less.",
+      "category": "Statutory",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-15",
+      "question": "What is professional tax?",
+      "answer": "A state tax of 200 per month for employees earning 25,000 or more a month (sample rule).",
+      "category": "Statutory",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-16",
+      "question": "How is TDS decided?",
+      "answer": "On projected annual income using the slabs shown in the Tax screen, spread across 12 months.",
+      "category": "Statutory",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-17",
+      "question": "When do I get Form 16?",
+      "answer": "After the financial year closes, usually by mid June.",
+      "category": "Statutory",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-18",
+      "question": "How long is the notice period?",
+      "answer": "30 days for L1-L2, 60 days for L3, 90 days for L4 and above.",
+      "category": "Exit",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-19",
+      "question": "Can I buy out my notice period?",
+      "answer": "Yes, with manager and HR approval, by paying the shortfall in notice pay.",
+      "category": "Exit",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-20",
+      "question": "What is the probation period?",
+      "answer": "Six months, reviewed by manager and HR.",
+      "category": "Policy",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-21",
+      "question": "What is the work from home policy?",
+      "answer": "Hybrid, about three office days a week for most roles. Some roles are fully remote.",
+      "category": "Policy",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-22",
+      "question": "How do I claim travel expenses?",
+      "answer": "Submit bills within 30 days in the Expenses screen.",
+      "category": "Expenses",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-23",
+      "question": "Who approves my expenses?",
+      "answer": "Your head of department approves; Finance pays in the next cycle.",
+      "category": "Expenses",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-24",
+      "question": "What insurance do I have?",
+      "answer": "Group health cover for you, spouse and up to two children.",
+      "category": "Benefits",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-25",
+      "question": "How do I add a dependent to insurance?",
+      "answer": "Within 30 days of joining or a life event, through the Benefits screen.",
+      "category": "Benefits",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-26",
+      "question": "What training is available?",
+      "answer": "Each employee gets a learning budget and access to the online library; target is 24 hours a year.",
+      "category": "Benefits",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-27",
+      "question": "How do I update my bank details?",
+      "answer": "Raise a request in the Profile screen; HR verifies within 3 working days.",
+      "category": "Admin",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-28",
+      "question": "Who do I contact for payroll queries?",
+      "answer": "payroll@znova-demo.example",
+      "category": "Contacts",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-29",
+      "question": "What is the dress code?",
+      "answer": "Business casual; smart casual on Fridays.",
+      "category": "Policy",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    },
+    {
+      "faq_id": "FAQ-30",
+      "question": "How are holidays decided?",
+      "answer": "A calendar is published every January with national and regional holidays.",
+      "category": "Policy",
+      "policy_source": "Zenith Nova HR Policy Handbook v3.2 (fictional, for training)"
+    }
+  ],
+  "departments": [
+    "Customer Support",
+    "Data & AI",
+    "Engineering",
+    "Executive Office",
+    "Finance",
+    "Finance & Accounts",
+    "Human Resources",
+    "Legal & Compliance",
+    "Marketing",
+    "Operations",
+    "Operations & IT",
+    "Product & Design",
+    "Sales"
+  ],
+  "roles": [
+    "Account Executive",
+    "Accountant",
+    "Accounts Associate",
+    "Associate Product Analyst",
+    "Associate Software Engineer",
+    "Chief Executive Officer",
+    "Chief Financial Officer",
+    "Compliance Analyst",
+    "Content Strategist",
+    "Customer Support Executive",
+    "Data & AI Manager",
+    "Data Analyst",
+    "Data Engineer",
+    "DevOps Engineer",
+    "Digital Marketing Executive",
+    "Director of Engineering",
+    "Engineering Manager",
+    "Finance Manager",
+    "Financial Controller",
+    "HR Associate",
+    "HR Business Partner",
+    "HR Executive",
+    "HR Manager",
+    "Head of Customer Success",
+    "Head of Data & AI",
+    "Head of HR",
+    "Head of Legal & Compliance",
+    "Head of Marketing",
+    "Head of Operations",
+    "Head of Product",
+    "IT Support Associate",
+    "Junior Data Analyst",
+    "Legal Associate",
+    "Legal Counsel",
+    "ML Engineer",
+    "Marketing Associate",
+    "Marketing Manager",
+    "Operations Executive",
+    "Operations Manager",
+    "Product Manager",
+    "QA Engineer",
+    "Regional Sales Head",
+    "Sales Development Representative",
+    "Sales Manager",
+    "Senior Account Executive",
+    "Senior Accountant",
+    "Senior Data Scientist",
+    "Senior Product Manager",
+    "Senior Software Engineer",
+    "Senior Support Specialist",
+    "Software Engineer",
+    "Support Associate",
+    "Support Executive",
+    "Support Manager",
+    "Support Team Lead",
+    "Systems Administrator",
+    "Tech Lead",
+    "UI/UX Designer",
+    "VP Sales"
+  ],
+  "known_names": [
+    "Divya Menon",
+    "Karthik Iyer",
+    "Meera Reddy",
+    "Priya Nair",
+    "Rohan Sharma"
+  ]
+}

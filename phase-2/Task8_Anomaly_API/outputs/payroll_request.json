@@ -1,0 +1,46 @@
+{
+ "records": [
+  {
+   "payroll_item_id": "PI-003304",
+   "employee_id": "EMP-0304",
+   "month": "2025-12-01",
+   "role_id": "R025",
+   "job_level": 4,
+   "monthly_fixed_gross": 197044.0,
+   "payable_days": 31.0,
+   "lop_days": 0.0,
+   "overtime_hours_paid": 0.0,
+   "overtime_pay": 0.0,
+   "variable_pay": 85320.05,
+   "gross_pay": 2823640.5,
+   "pf_employee": 1800.0,
+   "esi_employee": 0.0,
+   "professional_tax": 200,
+   "tds": 45789.65,
+   "other_deductions": 0,
+   "total_deductions": 47789.65,
+   "net_pay": 2345744.0
+  },
+  {
+   "payroll_item_id": "PI-000001",
+   "employee_id": "EMP-0002",
+   "month": "2025-04-01",
+   "role_id": "R047",
+   "job_level": 4,
+   "monthly_fixed_gross": 144460.0,
+   "payable_days": 30.0,
+   "lop_days": 0.0,
+   "overtime_hours_paid": 0.0,
+   "overtime_pay": 0.0,
+   "variable_pay": 34670.4,
+   "gross_pay": 179130.4,
+   "pf_employee": 1800.0,
+   "esi_employee": 0.0,
+   "professional_tax": 200,
+   "tds": 18625.79,
+   "other_deductions": 0,
+   "total_deductions": 20625.79,
+   "net_pay": 158504.61
+  }
+ ]
+}

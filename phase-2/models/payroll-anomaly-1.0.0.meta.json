@@ -1,0 +1,38 @@
+{
+  "version": "payroll-anomaly-1.0.0",
+  "created_utc": "2026-11-11T12:57:34+00:00",
+  "random_seed": 42,
+  "sklearn_version": "1.9.1",
+  "model": "IsolationForest + rules",
+  "n_estimators": 300,
+  "features": [
+    "gross_vs_fixed",
+    "gross_vs_expected",
+    "ded_ratio",
+    "net_ratio",
+    "tds_ratio",
+    "ded_sum_gap",
+    "net_gap",
+    "ot_hours",
+    "ot_rate_ratio",
+    "fixed_vs_role",
+    "fixed_vs_own",
+    "pf_vs_own"
+  ],
+  "rules": [
+    "DUPLICATE_PAYMENT",
+    "ZERO_PAY",
+    "NEGATIVE_NET_PAY",
+    "GROSS_ABOVE_NORM",
+    "GROSS_BELOW_EXPECTED",
+    "OVERTIME_ABOVE_CAP",
+    "PF_NOT_DEDUCTED",
+    "ROLE_PAY_ABOVE_PEERS",
+    "NET_PAY_MISMATCH"
+  ],
+  "contamination": 0.025,
+  "threshold_on_raw_score": 0.5238864171272903,
+  "trained_on_rows": 7340,
+  "labels_used_for_training": false,
+  "flag_rule": "flagged = any rule fires OR raw IsolationForest score >= threshold"
+}
