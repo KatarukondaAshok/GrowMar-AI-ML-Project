@@ -1,0 +1,204 @@
+{
+  "task11": {
+    "quality": {
+      "Final screener (masked): skills + similarity + experience": {
+        "precision_at_5": 0.96,
+        "mean_human_score_top5": 4.36,
+        "ndcg_at_5": 0.968,
+        "spearman": 0.84
+      },
+      "Required-skill coverage only": {
+        "precision_at_5": 0.92,
+        "mean_human_score_top5": 4.26,
+        "ndcg_at_5": 0.883,
+        "spearman": 0.792
+      },
+      "Text similarity only (TF-IDF)": {
+        "precision_at_5": 0.9,
+        "mean_human_score_top5": 4.18,
+        "ndcg_at_5": 0.86,
+        "spearman": 0.743
+      },
+      "Random order (reference)": {
+        "precision_at_5": 0.18,
+        "mean_human_score_top5": 2.3,
+        "ndcg_at_5": 0.298,
+        "spearman": 0.034
+      }
+    },
+    "extraction": {
+      "required_coverage_MAE_vs_label": 0.026,
+      "nice_coverage_MAE_vs_label": 0.007,
+      "years_MAE_vs_total_experience_years": 0.39
+    },
+    "baseline_shortlist_rate": 0.171
+  },
+  "task12": [
+    {
+      "screener": "Before: naive screener reads the raw resume text",
+      "mean_abs_gap_points": 0.0562,
+      "max_abs_gap_points": 0.378,
+      "pairs_with_any_gap": 25,
+      "mean_male_minus_female": 0.0273,
+      "pairs_where_rank_differs": 25,
+      "precision_at_5": 0.96,
+      "ndcg_at_5": 0.968
+    },
+    {
+      "screener": "After: masked screener (final)",
+      "mean_abs_gap_points": 0.0,
+      "max_abs_gap_points": 0.0,
+      "pairs_with_any_gap": 0,
+      "mean_male_minus_female": 0.0,
+      "pairs_where_rank_differs": 0,
+      "precision_at_5": 0.96,
+      "ndcg_at_5": 0.968
+    }
+  ],
+  "task13": {
+    "best": "try-2",
+    "params": {
+      "n_estimators": 100,
+      "learning_rate": 0.05,
+      "num_leaves": 4,
+      "min_child_samples": 20,
+      "reg_lambda": 5.0,
+      "colsample_bytree": 1.0
+    },
+    "table": [
+      {
+        "model": "Reference: LogReg balanced (baseline_benchmarks)",
+        "roc_auc": 0.713,
+        "roc_auc_sd": 0.01,
+        "pr_auc": 0.332,
+        "precision_top30": NaN,
+        "recall_top30": NaN
+      },
+      {
+        "model": "My Task 3 baseline: LogReg balanced (same folds, recomputed)",
+        "roc_auc": 0.703,
+        "roc_auc_sd": 0.027,
+        "pr_auc": 0.301,
+        "precision_top30": 0.273,
+        "recall_top30": 0.559
+      },
+      {
+        "model": "Attrition v2: LightGBM (try-2)",
+        "roc_auc": 0.725,
+        "roc_auc_sd": 0.03,
+        "pr_auc": 0.339,
+        "precision_top30": 0.284,
+        "recall_top30": 0.581
+      }
+    ],
+    "fold_diff_roc": [
+      -0.0198,
+      0.0693,
+      -0.0026,
+      0.047,
+      0.0139
+    ],
+    "diff_mean": 0.0216,
+    "diff_sd": 0.0363,
+    "wins": 3,
+    "calibration": [
+      {
+        "scores": "LightGBM raw",
+        "brier": 0.1141,
+        "ECE": 0.0281
+      },
+      {
+        "scores": "LightGBM + Platt calibration",
+        "brier": 0.1142,
+        "ECE": 0.0195
+      },
+      {
+        "scores": "LogReg balanced (baseline)",
+        "brier": 0.2067,
+        "ECE": 0.2636
+      },
+      {
+        "scores": "Base rate only",
+        "brier": 0.125,
+        "ECE": 0.0
+      }
+    ],
+    "test": [
+      {
+        "model": "LogReg balanced (baseline)",
+        "roc_auc": 0.691,
+        "pr_auc": 0.323,
+        "precision_top30": 0.266,
+        "recall_top30": 0.543,
+        "brier": NaN
+      },
+      {
+        "model": "Attrition v2 (calibrated)",
+        "roc_auc": 0.698,
+        "pr_auc": 0.358,
+        "precision_top30": 0.252,
+        "recall_top30": 0.514,
+        "brier": 0.114
+      }
+    ],
+    "max_single_feature_auc": 0.609
+  },
+  "task14": {
+    "rows": 430,
+    "bands": {
+      "Low": 301,
+      "Medium": 86,
+      "High": 43
+    },
+    "columns_match_sample": true,
+    "score_min": 0.023,
+    "score_max": 0.448,
+    "top_drivers": [
+      "last_engagement_score",
+      "months_since_last_raise",
+      "tenure_months",
+      "wfh_share_3m",
+      "manager_changes_12m"
+    ],
+    "blank_reasons": 0
+  },
+  "task15_gap_test": {
+    "career_gap_mean_ratio": 0.7958,
+    "no_gap_mean_ratio": 0.8158,
+    "p_value": 0.007449152316627939,
+    "n_gap": 385,
+    "n_nogap": 2549
+  },
+  "task15": {
+    "best_kind": "linear",
+    "metrics": [
+      {
+        "model": "Baseline: average pay of the role",
+        "cv_MAE_rupees": 115964.0,
+        "cv_R2": 0.9236,
+        "cv_MAPE_pct": 14.57,
+        "test_MAE_rupees": 115094.0,
+        "test_R2": 0.9333
+      },
+      {
+        "model": "Linear (Ridge), job-related features",
+        "cv_MAE_rupees": 54293.0,
+        "cv_R2": 0.9815,
+        "cv_MAPE_pct": 6.56,
+        "test_MAE_rupees": 54195.0,
+        "test_R2": 0.9829
+      },
+      {
+        "model": "Gradient boosting (LightGBM), job-related features",
+        "cv_MAE_rupees": 54412.0,
+        "cv_R2": 0.9809,
+        "cv_MAPE_pct": 6.58,
+        "test_MAE_rupees": NaN,
+        "test_R2": NaN
+      }
+    ],
+    "band_hit_rate_on_test": 0.807,
+    "q_low": -0.1081,
+    "q_high": 0.104
+  }
+}

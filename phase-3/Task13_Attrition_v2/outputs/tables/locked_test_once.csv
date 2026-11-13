@@ -1,0 +1,3 @@
+model,roc_auc,pr_auc,precision_top30,recall_top30,brier
+LogReg balanced (baseline),0.691,0.323,0.266,0.543,
+Attrition v2 (calibrated),0.698,0.358,0.252,0.514,0.114

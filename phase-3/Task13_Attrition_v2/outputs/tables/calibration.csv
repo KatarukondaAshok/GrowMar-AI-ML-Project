@@ -1,0 +1,5 @@
+scores,brier,ECE
+LightGBM raw,0.1141,0.0281
+LightGBM + Platt calibration,0.1142,0.0195
+LogReg balanced (baseline),0.2067,0.2636
+Base rate only,0.125,0.0

@@ -1,0 +1,29 @@
+group_by,measure,gender,mean_value,count,gap_vs_reference,career_gap_group,gap_percent_points_of_band_mid
+gender,Actual pay in the data (pay / band mid),Female,0.8066,1222,-0.011,,-1.1
+gender,Actual pay in the data (pay / band mid),Male,0.8176,1652,0.0,,0.0
+gender,Actual pay in the data (pay / band mid),Other,0.8266,60,0.009,,0.9
+gender,Model WITH gender and career gap (copies history),Female,0.804,1222,-0.0114,,-1.14
+gender,Model WITH gender and career gap (copies history),Male,0.8154,1652,0.0,,0.0
+gender,Model WITH gender and career gap (copies history),Other,0.8214,60,0.006,,0.6
+gender,Final model (job-related only),Female,0.811,1222,0.001,,0.1
+gender,Final model (job-related only),Male,0.81,1652,0.0,,0.0
+gender,Final model (job-related only),Other,0.815,60,0.005,,0.5
+gender,Final model: actual minus predicted,Female,-0.0044,1222,-0.0119,,-1.19
+gender,Final model: actual minus predicted,Male,0.0076,1652,0.0,,0.0
+gender,Final model: actual minus predicted,Other,0.0116,60,0.004,,0.4
+career_gap_group,Actual pay in the data (pay / band mid),,0.8158,2549,0.0,no gap,0.0
+career_gap_group,Actual pay in the data (pay / band mid),,0.7913,124,-0.0245,1-6 months,-2.45
+career_gap_group,Actual pay in the data (pay / band mid),,0.7944,122,-0.0214,7-12 months,-2.14
+career_gap_group,Actual pay in the data (pay / band mid),,0.8011,139,-0.0147,over 12 months,-1.47
+career_gap_group,Model WITH gender and career gap (copies history),,0.8134,2549,0.0,no gap,0.0
+career_gap_group,Model WITH gender and career gap (copies history),,0.7887,124,-0.0247,1-6 months,-2.47
+career_gap_group,Model WITH gender and career gap (copies history),,0.7915,122,-0.0218,7-12 months,-2.18
+career_gap_group,Model WITH gender and career gap (copies history),,0.7991,139,-0.0142,over 12 months,-1.42
+career_gap_group,Final model (job-related only),,0.8104,2549,0.0,no gap,0.0
+career_gap_group,Final model (job-related only),,0.7973,124,-0.0131,1-6 months,-1.31
+career_gap_group,Final model (job-related only),,0.8074,122,-0.003,7-12 months,-0.3
+career_gap_group,Final model (job-related only),,0.8269,139,0.0165,over 12 months,1.65
+career_gap_group,Final model: actual minus predicted,,0.0054,2549,0.0,no gap,0.0
+career_gap_group,Final model: actual minus predicted,,-0.006,124,-0.0114,1-6 months,-1.14
+career_gap_group,Final model: actual minus predicted,,-0.013,122,-0.0184,7-12 months,-1.84
+career_gap_group,Final model: actual minus predicted,,-0.0259,139,-0.0313,over 12 months,-3.13

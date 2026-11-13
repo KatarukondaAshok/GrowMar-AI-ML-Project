@@ -1,0 +1,5 @@
+ranking,precision_at_5,mean_human_score_top5,ndcg_at_5,spearman
+Final screener (masked): skills + similarity + experience,0.96,4.36,0.968,0.84
+Required-skill coverage only,0.92,4.26,0.883,0.792
+Text similarity only (TF-IDF),0.9,4.18,0.86,0.743
+Random order (reference),0.18,2.3,0.298,0.034

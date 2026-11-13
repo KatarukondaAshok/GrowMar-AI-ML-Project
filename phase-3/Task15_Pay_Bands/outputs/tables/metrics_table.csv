@@ -1,0 +1,4 @@
+model,cv_MAE_rupees,cv_R2,cv_MAPE_pct,test_MAE_rupees,test_R2
+Baseline: average pay of the role,115964.0,0.9236,14.57,115094.0,0.9333
+"Linear (Ridge), job-related features",54293.0,0.9815,6.56,54195.0,0.9829
+"Gradient boosting (LightGBM), job-related features",54412.0,0.9809,6.58,,

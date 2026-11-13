@@ -1,0 +1,9 @@
+# keep the repository light (reviewer notice): no environments, caches, secrets or programme data
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+data/raw/*.xlsx

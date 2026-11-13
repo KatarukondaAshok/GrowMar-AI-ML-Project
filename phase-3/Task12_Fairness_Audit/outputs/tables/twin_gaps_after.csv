@@ -1,0 +1,26 @@
+pair_id,job_id,attribute_changed,score_original,score_twin,gap_original_minus_twin,rank_original,rank_twin,orig_gender,twin_gender,orig_tier,twin_tier
+BP-01,J01,candidate_name (gender-coded) and college tier,91.927,91.927,0.0,2,2,Female,Male,Tier 2,Tier 1
+BP-02,J08,candidate_name (gender-coded) only,79.783,79.783,0.0,4,4,Male,Female,Tier 1,Tier 1
+BP-03,J03,candidate_name (gender-coded) and college tier,53.046,53.046,0.0,15,15,Female,Male,Tier 2,Tier 1
+BP-04,J03,candidate_name (gender-coded) only,32.736,32.736,0.0,68,68,Male,Female,Tier 2,Tier 2
+BP-05,J07,candidate_name (gender-coded) and college tier,32.353,32.353,0.0,32,32,Male,Female,Tier 3,Tier 1
+BP-06,J05,candidate_name (gender-coded) only,91.927,91.927,0.0,2,2,Male,Female,Tier 1,Tier 1
+BP-07,J08,candidate_name (gender-coded) and college tier,92.5,92.5,0.0,1,1,Female,Male,Tier 3,Tier 1
+BP-08,J02,candidate_name (gender-coded) only,35.992,35.992,0.0,15,15,Female,Male,Tier 2,Tier 2
+BP-09,J09,candidate_name (gender-coded) and college tier,88.187,88.187,0.0,4,4,Female,Male,Tier 1,Tier 3
+BP-10,J06,candidate_name (gender-coded) only,27.273,27.273,0.0,18,18,Male,Female,Tier 3,Tier 3
+BP-11,J07,candidate_name (gender-coded) and college tier,77.262,77.262,0.0,5,5,Female,Male,Tier 3,Tier 1
+BP-12,J03,candidate_name (gender-coded) only,46.895,46.895,0.0,23,23,Male,Female,Tier 2,Tier 2
+BP-13,J03,candidate_name (gender-coded) and college tier,72.812,72.812,0.0,8,8,Female,Male,Tier 3,Tier 1
+BP-14,J05,candidate_name (gender-coded) only,88.475,88.475,0.0,5,5,Male,Female,Tier 1,Tier 1
+BP-15,J03,candidate_name (gender-coded) and college tier,83.346,83.346,0.0,3,3,Male,Female,Tier 3,Tier 1
+BP-16,J06,candidate_name (gender-coded) only,27.207,27.207,0.0,20,20,Female,Male,Tier 3,Tier 3
+BP-17,J01,candidate_name (gender-coded) and college tier,31.376,31.376,0.0,57,57,Male,Female,Tier 1,Tier 3
+BP-18,J04,candidate_name (gender-coded) only,90.902,90.902,0.0,4,4,Female,Male,Tier 1,Tier 1
+BP-19,J09,candidate_name (gender-coded) and college tier,71.484,71.484,0.0,10,10,Male,Female,Tier 3,Tier 1
+BP-20,J04,candidate_name (gender-coded) only,73.445,73.445,0.0,13,13,Female,Male,Tier 2,Tier 2
+BP-21,J04,candidate_name (gender-coded) and college tier,76.315,76.315,0.0,10,10,Male,Female,Tier 2,Tier 1
+BP-22,J03,candidate_name (gender-coded) only,65.992,65.992,0.0,12,12,Female,Male,Tier 2,Tier 2
+BP-23,J01,candidate_name (gender-coded) and college tier,13.513,13.513,0.0,163,163,Female,Male,Tier 3,Tier 1
+BP-24,J06,candidate_name (gender-coded) only,12.896,12.896,0.0,172,172,Female,Male,Tier 2,Tier 2
+BP-25,J01,candidate_name (gender-coded) and college tier,65.016,65.016,0.0,7,7,Female,Male,Tier 2,Tier 1

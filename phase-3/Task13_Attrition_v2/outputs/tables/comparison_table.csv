@@ -1,0 +1,4 @@
+model,roc_auc,roc_auc_sd,pr_auc,precision_top30,recall_top30
+Reference: LogReg balanced (baseline_benchmarks),0.713,0.01,0.332,,
+"My Task 3 baseline: LogReg balanced (same folds, recomputed)",0.703,0.027,0.301,0.273,0.559
+Attrition v2: LightGBM (try-2),0.725,0.03,0.339,0.284,0.581

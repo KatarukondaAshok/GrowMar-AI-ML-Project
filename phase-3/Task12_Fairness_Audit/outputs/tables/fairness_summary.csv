@@ -1,0 +1,3 @@
+screener,mean_abs_gap_points,max_abs_gap_points,pairs_with_any_gap,mean_male_minus_female,pairs_where_rank_differs,precision_at_5,ndcg_at_5
+Before: naive screener reads the raw resume text,0.0562,0.378,25,0.0273,25,0.96,0.968
+After: masked screener (final),0.0,0.0,0,0.0,0,0.96,0.968

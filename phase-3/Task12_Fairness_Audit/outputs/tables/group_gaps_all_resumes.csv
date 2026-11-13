@@ -1,0 +1,11 @@
+screener,group_by,inferred_gender,mean_value,count,gap_vs_reference,college_tier
+before,inferred_gender,Female,63.702,74,2.1684,
+before,inferred_gender,Male,61.5336,111,0.0,
+before,college_tier,,65.4435,49,6.6947,Tier 1
+before,college_tier,,58.7487,71,0.0,Tier 2
+before,college_tier,,64.0967,65,5.3479,Tier 3
+after,inferred_gender,Female,63.7164,74,2.1847,
+after,inferred_gender,Male,61.5316,111,0.0,
+after,college_tier,,65.4216,49,6.6582,Tier 1
+after,college_tier,,58.7634,71,0.0,Tier 2
+after,college_tier,,64.1102,65,5.3469,Tier 3
