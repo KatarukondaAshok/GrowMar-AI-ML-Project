@@ -1,0 +1,34 @@
+# Hosting decision (Task 17)
+Free-plan limits change often. The facts below were read from the providers' documentation and review articles on 16 Nov 2026 (e.g. flaviocopes.com/hosting-free-tiers, checked September 2026). **Check the pricing page again before relying on them.**
+
+## What the service needs (measured)
+API process about 198 MB + mock HR process about 90 MB = about **290 MB RAM**, 7 models loaded once at start-up (about 0.2 s), Python 3.12.
+
+## Comparison
+| Option | Memory | Sleep behaviour | Build limits | Price per month |
+|---|---|---|---|---|
+| **Hugging Face Space (Gradio type, free CPU)** | about 16 GB RAM, 2 vCPU | Sleeps after a period without visitors; wakes on the next request | Builds from the repo; ZeroGPU label on this account | $0 |
+| Hugging Face Space (Docker type) | same | same | **Locked on this free account** ("Paid" badge shown on the create-Space page) | needs a paid plan |
+| Render, Free web service | 512 MB RAM, 0.1 CPU | Sleeps after 15 min without traffic; next request waits about 1 minute | 500 build minutes, 750 free instance hours | $0 |
+| Render, Starter | 512 MB RAM, 0.5 CPU | Never sleeps | same | about $7 |
+| Railway, Free | 0.5 GB RAM, 1 vCPU, $1 credit | not stated | not stated | $0 to $5 (Hobby) |
+| Fly.io | no free allowance (short trial) | trial machines stop | not stated | about $2 for the smallest always-on machine |
+
+## Decision (what was actually done)
+**The API and the console run together in one Hugging Face Space (Gradio type, free).** Reasons:
+1. It costs nothing and needs no credit card.
+2. 16 GB of memory is far more than the 290 MB the service needs, so memory is not a risk.
+3. Docker Spaces are locked on this account, which ruled out the plan of building from the `Dockerfile`; a Gradio Space can still run the same FastAPI code.
+4. Render stays ready as the alternative (`render.yaml`, `Dockerfile`), but the Docker build was never run here, so I did not rely on it.
+
+**What it cost to do this:** the Space needs `app.py` to launch the Gradio page, then add the API routes to that same server, with `ssr_mode=False` (otherwise Gradio's front proxy answered `/v1/...` with a web page). It also registers a hidden dummy GPU function because the Space runs on ZeroGPU hardware. These are Space-specific workarounds and live in `phase-4/huggingface_space/`.
+
+**Known limits:** the free Space sleeps when nobody visits and takes a moment to wake, so open `/v1/health` once before a demo. The API key is optional; if set, put it only in Space secrets.
+**If real users depended on it:** move to an always-on paid plan (Render Starter about $7 a month, or a paid Space). A pause would hurt real users and the price is small.
+
+## Deploy steps (Hugging Face Space)
+1. Create a Space, SDK **Gradio**, public, free hardware.
+2. Upload the contents of `phase-4/huggingface_space/` plus the folders `app/`, `src/`, `mock_services/`, `models/`, `data/`, `scripts/`, `console/`, `tests/fixtures/`.
+3. Check that `requirements.txt` pins `pydantic==2.12.5` (Gradio's extra packages need `pydantic<=2.12.5`).
+4. Wait for **Running**; open `https://<user>-<space>.hf.space/v1/health`.
+5. `python smoke_test.py https://<user>-<space>.hf.space` (from `phase-4`).
