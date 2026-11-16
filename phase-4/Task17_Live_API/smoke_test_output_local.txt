@@ -1,0 +1,16 @@
+
+SMOKE TEST against http://127.0.0.1:8011
+------------------------------------------------------------------------------
+PASS  health                   0.0s  models: 7, loaded 1x
+PASS  anomaly payroll          0.1s  flagged 1 of 2: GROSS_ABOVE_NORM
+PASS  anomaly attendance       0.0s  flagged 1
+PASS  chat answer              0.0s  intent=leave_balance reply='You have 9 CL days left.'
+PASS  chat refusal             0.0s  refused=True
+PASS  resume rank              0.0s  score 85.0
+PASS  attrition risk           0.0s  Low 0.073
+PASS  pay bands                0.0s  998800.0 to 1234900.0
+PASS  forecast                 0.0s  6 months from 2026-10
+PASS  monitoring               0.0s  status ALERT
+PASS  bad input gives 422      0.0s  HTTP 422
+------------------------------------------------------------------------------
+11/11 passed

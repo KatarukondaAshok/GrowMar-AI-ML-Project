@@ -1,0 +1,18 @@
+# Render Blueprint: deploys the API from this repo. Secrets are set in the Render dashboard, never here.
+services:
+  - type: web
+    name: cortexhr-api
+    runtime: docker
+    dockerfilePath: ./phase-4/Dockerfile
+    dockerContext: ./phase-4
+    plan: free              # change to 'starter' for no sleeping (see Task17_Live_API/HOSTING_DECISION.md)
+    healthCheckPath: /v1/health
+    envVars:
+      - key: AURA_API_KEY
+        sync: false         # you type the value in the dashboard
+      - key: AURA_DEMO_TODAY
+        value: "2026-09-30"
+      - key: AURA_MODELS_DIR
+        value: models
+      - key: AURA_DATA_DIR
+        value: data

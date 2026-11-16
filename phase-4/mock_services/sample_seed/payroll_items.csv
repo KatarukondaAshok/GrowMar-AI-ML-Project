@@ -1,0 +1,4 @@
+payroll_item_id,run_id,employee_id,month,department_id,role_id,job_level,overtime_eligible,monthly_fixed_gross,payable_days,lop_days,overtime_hours_paid,overtime_pay,variable_pay,gross_pay,pf_employee,esi_employee,professional_tax,tds,other_deductions,total_deductions,net_pay
+PI-T1,PR-2026-09,EMP-0002,2026-09-01,D01,R003,2,N,70000,30,0,0,0,0,70000,1800,0,200,1000,0,3000,67000
+PI-T2,PR-2026-09,EMP-0003,2026-09-01,D01,R003,2,N,72000,30,0,0,0,0,72000,1800,0,200,1000,0,3000,69000
+PI-T3,PR-2026-09,EMP-0004,2026-09-01,D01,R003,2,N,75000,30,0,0,0,0,750000,1800,0,200,1000,0,3000,747000

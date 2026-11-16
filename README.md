@@ -7,5 +7,6 @@ Employee attrition and attendance analytics. Student: Katarukonda Ashok (GM00154
 | [phase-1](phase-1) | Data audit, feature pipeline, baseline models, anomaly detection | phase-1 | Done |
 | [phase-2](phase-2) | Payroll detector, reason codes, API, chatbot | phase-2 | Done |
 | [phase-3](phase-3) | Resume ranking, fairness, attrition v2, SHAP, pay bands | phase-3 | Done |
+| [phase-4](phase-4) | Forecast, one live API, monitoring, console, model cards | phase-4 | Built; deploy and demo next |
 
 Each phase folder has its own README with run steps and results.

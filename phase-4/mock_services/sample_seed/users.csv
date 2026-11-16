@@ -1,0 +1,5 @@
+employee_id,username,role,is_active
+EMP-0002,a@x,EMPLOYEE,Y
+EMP-0003,b@x,EMPLOYEE,Y
+EMP-0011,c@x,HR,Y
+EMP-0004,d@x,EMPLOYEE,N

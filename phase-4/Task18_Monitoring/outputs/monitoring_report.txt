@@ -1,0 +1,16 @@
+CORTEXHR MONITORING REPORT  2026-11-16T10:11:24+00:00  OVERALL: ALERT
+
+Drift (PSI, reference = training data)
+  last_engagement_score              PSI 0.063  OK
+  months_since_last_raise            PSI 2.783  ALERT
+  tenure_months                      PSI 0.209  WATCH
+  wfh_share_3m                       PSI 0.106  WATCH
+  manager_changes_12m                PSI 0.001  OK
+  comp_ratio                         PSI 0.104  WATCH
+  attendance_rate_3m                 PSI 1.467  ALERT
+  avg_overtime_hours_per_month_3m    PSI 0.036  OK
+
+Twin resumes: 25 pairs, average gap 0.0 points, pairs with any gap 0  OK
+Pay gap (model, points of band mid-point): gender 0.58 (history 1.1)  career gap 1.68 (history 2.45)  WATCH
+
+Follow the 4-step plan in Task18_Monitoring/README.md before anyone relies on the affected model.

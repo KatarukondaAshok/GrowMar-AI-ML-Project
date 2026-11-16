@@ -1,0 +1,2 @@
+attendance_feature_id,employee_id,month,department_id,job_level,scheduled_days,present_days,wfh_days,half_days_unpaid,paid_leave_days,unpaid_absence_days,longest_unpaid_streak_days,late_arrivals,avg_hours_worked,overtime_hours,attendance_rate
+AF-T1,EMP-0002,2026-08-01,D01,3,21,20,8,0,1,0,0,1,8.6,0,0.95

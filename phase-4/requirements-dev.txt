@@ -1,0 +1,4 @@
+-r requirements.txt
+-r requirements-console.txt
+pytest==9.2.0
+reportlab>=4.0

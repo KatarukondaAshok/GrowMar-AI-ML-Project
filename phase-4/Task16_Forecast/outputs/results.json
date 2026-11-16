@@ -1,0 +1,51 @@
+{
+  "trained_through": "2026-09",
+  "best_method_by_backtest": {
+    "attrition_rate_monthly_pct": "ets",
+    "headcount_end": "sarimax"
+  },
+  "backtest_summary": [
+    {
+      "metric": "attrition_rate_monthly_pct",
+      "method": "baseline",
+      "mae": 0.526,
+      "mape_pct": 71.211,
+      "coverage_80": 0.778
+    },
+    {
+      "metric": "attrition_rate_monthly_pct",
+      "method": "ets",
+      "mae": 0.506,
+      "mape_pct": 67.82,
+      "coverage_80": 0.778
+    },
+    {
+      "metric": "headcount_end",
+      "method": "baseline",
+      "mae": 2.778,
+      "mape_pct": 6.875,
+      "coverage_80": 0.727
+    },
+    {
+      "metric": "headcount_end",
+      "method": "ets",
+      "mae": 2.311,
+      "mape_pct": 5.692,
+      "coverage_80": 0.692
+    },
+    {
+      "metric": "headcount_end",
+      "method": "sarimax",
+      "mae": 2.33,
+      "mape_pct": 5.572,
+      "coverage_80": 0.727
+    }
+  ],
+  "columns_match_sample": true,
+  "rows": 72,
+  "least_trusted": {
+    "department": "D05",
+    "month": "2027-03",
+    "range_width_pct": 32.3
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "generated_utc": "2026-11-16T10:11:24+00:00",
+  "status": "ALERT",
+  "thresholds": {
+    "psi_watch": 0.1,
+    "psi_alert": 0.25,
+    "twin_alert_points": 0.1,
+    "pay_alert_points": 2.0
+  },
+  "drift": [
+    {
+      "feature": "last_engagement_score",
+      "psi": 0.0627,
+      "verdict": "OK",
+      "reference_mean": 3.442,
+      "current_mean": 3.521
+    },
+    {
+      "feature": "months_since_last_raise",
+      "psi": 2.7827,
+      "verdict": "ALERT",
+      "reference_mean": 10.99,
+      "current_mean": 5.012
+    },
+    {
+      "feature": "tenure_months",
+      "psi": 0.2086,
+      "verdict": "WATCH",
+      "reference_mean": 37.776,
+      "current_mean": 42.977
+    },
+    {
+      "feature": "wfh_share_3m",
+      "psi": 0.1058,
+      "verdict": "WATCH",
+      "reference_mean": 0.379,
+      "current_mean": 0.385
+    },
+    {
+      "feature": "manager_changes_12m",
+      "psi": 0.0009,
+      "verdict": "OK",
+      "reference_mean": 0.31,
+      "current_mean": 0.34
+    },
+    {
+      "feature": "comp_ratio",
+      "psi": 0.1038,
+      "verdict": "WATCH",
+      "reference_mean": 1.033,
+      "current_mean": 1.008
+    },
+    {
+      "feature": "attendance_rate_3m",
+      "psi": 1.467,
+      "verdict": "ALERT",
+      "reference_mean": 0.91,
+      "current_mean": 0.945
+    },
+    {
+      "feature": "avg_overtime_hours_per_month_3m",
+      "psi": 0.0359,
+      "verdict": "OK",
+      "reference_mean": 2.169,
+      "current_mean": 1.269
+    }
+  ],
+  "twin_resume_gap": {
+    "pairs": 25,
+    "avg_abs_gap_points": 0.0,
+    "max_gap_points": 0.0,
+    "pairs_with_any_gap": 0,
+    "verdict": "OK"
+  },
+  "pay_gap": {
+    "gender": {
+      "model_gap_points": 0.58,
+      "history_gap_points": 1.1,
+      "verdict": "OK"
+    },
+    "career_gap": {
+      "model_gap_points": 1.68,
+      "history_gap_points": 2.45,
+      "verdict": "WATCH"
+    },
+    "verdict": "WATCH"
+  },
+  "next_step": "Follow the 4-step plan in Task18_Monitoring/README.md before anyone relies on the affected model."
+}

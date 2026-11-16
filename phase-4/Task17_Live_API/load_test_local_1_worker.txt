@@ -1,0 +1,2 @@
+100 parallel calls in 2.9s: 100 ok, 0 failed; median 2.88s, slowest 2.90s
+failures: none

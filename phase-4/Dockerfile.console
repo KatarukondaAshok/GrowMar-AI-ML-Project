@@ -1,0 +1,9 @@
+FROM python:3.12-slim
+WORKDIR /app
+ENV PYTHONUNBUFFERED=1
+COPY requirements-console.txt .
+RUN pip install --no-cache-dir -r requirements-console.txt
+COPY console ./console
+COPY tests/fixtures ./tests/fixtures
+EXPOSE 7860
+CMD ["python", "console/app.py"]

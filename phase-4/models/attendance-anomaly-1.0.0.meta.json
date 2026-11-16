@@ -1,0 +1,28 @@
+{
+  "version": "attendance-anomaly-1.0.0",
+  "created_utc": "2026-11-11T12:57:36+00:00",
+  "random_seed": 42,
+  "sklearn_version": "1.9.1",
+  "model": "IsolationForest",
+  "n_estimators": 300,
+  "features": [
+    "attendance_rate",
+    "unpaid_absence_days",
+    "longest_unpaid_streak_days",
+    "late_arrivals",
+    "avg_hours_worked",
+    "overtime_hours",
+    "half_days_unpaid",
+    "paid_leave_days",
+    "present_ratio",
+    "wfh_share",
+    "rate_change_vs_prev",
+    "hours_change_vs_prev",
+    "rate_vs_own_mean",
+    "hours_vs_own_mean"
+  ],
+  "threshold_on_anomaly_score": 0.5655528046164648,
+  "rule": "flag a month when anomaly_score >= threshold (score = -IsolationForest.score_samples)",
+  "trained_on_rows": 7189,
+  "chosen_flag_rate": 0.035
+}
